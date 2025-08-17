@@ -164,19 +164,6 @@ a {
     transition: color 0.25s ease;
 }
 
-#image02 .frame {
-    width: 100vw;
-    transition: none;
-}
-
-#image02 .frame {
-    width: 100vw;
-}
-
-#image02 .frame img {
-    transition: none;
-}
-
 #wrapper {
     -webkit-overflow-scrolling: touch;
     align-items: center;
