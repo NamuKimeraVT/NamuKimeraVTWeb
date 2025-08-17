@@ -377,14 +377,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     -webkit-text-fill-color: currentcolor;
 }
 
-#text01:not(:first-child) {
-    margin-top: 1rem !important;
-}
-
-#text01:not(:last-child) {
-    margin-bottom: 1rem !important;
-}
-
 #text01 {
     text-align: center;
     text-transform: uppercase;
@@ -412,13 +404,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-
-#text02:not(:first-child) {
-    margin-top: 0.25rem !important;
+#text01:not(:first-child) {
+    margin-top: 1rem !important;
 }
 
-#text02:not(:last-child) {
-    margin-bottom: 0.25rem !important;
+#text01:not(:last-child) {
+    margin-bottom: 1rem !important;
 }
 
 #text02 {
@@ -448,12 +439,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-#text03:not(:first-child) {
-    margin-top: 1rem !important;
+#text02:not(:first-child) {
+    margin-top: 0.25rem !important;
 }
 
-#text03:not(:last-child) {
-    margin-bottom: 1rem !important;
+#text02:not(:last-child) {
+    margin-bottom: 0.25rem !important;
 }
 
 #text03 {
@@ -483,12 +474,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-#text04:not(:first-child) {
-    margin-top: 0.25rem !important;
+#text03:not(:first-child) {
+    margin-top: 1rem !important;
 }
 
-#text04:not(:last-child) {
-    margin-bottom: 0.25rem !important;
+#text03:not(:last-child) {
+    margin-bottom: 1rem !important;
 }
 
 #text04 {
@@ -518,13 +509,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-
-#text05:not(:first-child) {
-    margin-top: 1rem !important;
+#text04:not(:first-child) {
+    margin-top: 0.25rem !important;
 }
 
-#text05:not(:last-child) {
-    margin-bottom: 1rem !important;
+#text04:not(:last-child) {
+    margin-bottom: 0.25rem !important;
 }
 
 #text05 {
@@ -554,16 +544,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-
-#text06 {
-    letter-spacing: 0.021875rem;
-    width: calc(100% + 0.021875rem);
-    font-size: 1em;
-    line-height: 1.875;
+#text05:not(:first-child) {
+    margin-top: 1rem !important;
 }
 
-#text06 {
-    font-size: 1em;
+#text05:not(:last-child) {
+    margin-bottom: 1rem !important;
 }
 
 #text06 {
@@ -612,14 +598,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     text-decoration: underline;
 }
 
-#text08:not(:first-child) {
-    margin-top: 1rem !important;
-}
-
-#text08:not(:last-child) {
-    margin-bottom: 1rem !important;
-}
-
 #text08 {
     text-align: center;
     text-transform: uppercase;
@@ -647,12 +625,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-#text09:not(:first-child) {
-    margin-top: 0.25rem !important;
+#text08:not(:first-child) {
+    margin-top: 1rem !important;
 }
 
-#text09:not(:last-child) {
-    margin-bottom: 0.25rem !important;
+#text08:not(:last-child) {
+    margin-bottom: 1rem !important;
 }
 
 #text09 {
@@ -680,6 +658,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text09 span.p:nth-child(n + 2) {
     margin-top: 1rem;
+}
+
+#text09:not(:first-child) {
+    margin-top: 0.25rem !important;
+}
+
+#text09:not(:last-child) {
+    margin-bottom: 0.25rem !important;
 }
 
 #text10 {
@@ -940,6 +926,65 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons04 li a:hover {
     transform: scale(1.025);
 }
+
+#buttons05 {
+    gap: 2.0rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#buttons05:not(:first-child) {
+    margin-top: 2.0rem !important;
+}
+
+#buttons05:not(:last-child) {
+    margin-bottom: 2.0rem !important;
+}
+
+#buttons05 li a {
+    display: inline-flex;
+    width: 100vw;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    padding: 0 1.875rem;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons05 li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.5em;
+    margin-left: -0.125em;
+    margin-right: calc(0.5em + 0rem);
+    transition: fill 0.25s ease;
+}
+
+#buttons05 li a .label {
+    direction: var(--site-language-direction);
+    overflow: hidden;
+}
+
+#buttons05 .button {
+    background-color: #4240a3;
+    color: #FFFFFF;
+    background-image: linear-gradient(45deg, rgba(95, 168, 217, 0.769) 0%, rgba(64, 163, 163, 0.008) 75%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#buttons05 .button:hover {
+    background-color: #0c21df !important;
+}
+
+#buttons05 li a:hover {
+    transform: scale(1.025);
+}
+
 .video {
     position: relative;
 }
@@ -1176,7 +1221,6 @@ body.is-loading #main {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
 }
-
 
 form {
     display: flex;
@@ -2061,34 +2105,6 @@ body:after {
   filter: none !important;
 }
 
-nav {
-  background-color: #00ffff;
-  overflow: hidden;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 10;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 18px 18px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .faq {
     width: 80%;
     margin: 0 auto;
@@ -2220,4 +2236,32 @@ nav li a:hover {
 
 .section li {
     margin-bottom: 5px;
+}
+
+nav {
+  background-color: #00ffff;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: transparent;
+  color: black;
 }
