@@ -430,318 +430,152 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     transition: none;
 }
 
-#text01 {
+.text {
+    justify-content: var(--flex-alignment);
+    letter-spacing: 0;
+    padding: 0;
     text-align: center;
-    text-transform: uppercase;
-    color: #4c00ff;
     font-family: 'Sora', sans-serif;
-    font-size: 1.25em;
-    line-height: 1;
-    font-weight: 700;
 }
 
-#text01 mark {
+.text li {
+    max-width: 100%;
+}
+
+.text p {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.text li a {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    white-space: nowrap;
+}
+
+.text mark {
     color: #FFFFFF;
     background-color: transparent;
 }
 
-#text01 a {
+.text a {
     text-decoration: none;
 }
 
-#text01 a:hover {
+.text a:hover {
     text-decoration: underline;
 }
 
-#text01 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text01:not(:first-child) {
+.text:not(:first-child) {
     margin-top: 1rem !important;
 }
 
-#text01:not(:last-child) {
+.text:not(:last-child) {
     margin-bottom: 1rem !important;
+}
+
+.text li a:hover {
+    transform: scale(1.025);
+}
+
+.text span.p:nth-child(n + 2) {
+    margin-top: 1rem;
+}
+
+#text01 {
+    text-transform: uppercase;
+    color: #4c00ff;
+    font-size: 1.25em;
+    line-height: 1;
+    font-weight: 700;
 }
 
 #text02 {
-    text-align: center;
     text-transform: uppercase;
     color: #000000;
-    font-family: 'Sora', sans-serif;
     font-size: 2em;
     line-height: 1;
-    font-weight: 400;
-}
-
-#text02 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text02 a {
-    text-decoration: none;
-}
-
-#text02 a:hover {
-    text-decoration: underline;
-}
-
-#text02 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text02:not(:first-child) {
-    margin-top: 0.25rem !important;
-}
-
-#text02:not(:last-child) {
-    margin-bottom: 0.25rem !important;
+    font-weight: 600;
 }
 
 #text03 {
-    text-align: center;
     text-transform: uppercase;
     color: #ff0000;
-    font-family: 'Sora', sans-serif;
     font-size: 1.25em;
     line-height: 1;
     font-weight: 700;
 }
 
-#text03 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text03 a {
-    text-decoration: none;
-}
-
-#text03 a:hover {
-    text-decoration: underline;
-}
-
-#text03 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text03:not(:first-child) {
-    margin-top: 1rem !important;
-}
-
-#text03:not(:last-child) {
-    margin-bottom: 1rem !important;
-}
-
 #text04 {
-    text-align: center;
     text-transform: lowercase;
     color: #00ccff;
-    font-family: 'Sora', sans-serif;
     font-size: 0.875em;
     line-height: 1;
     font-weight: 400;
 }
 
-#text04 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text04 a {
-    text-decoration: none;
-}
-
-#text04 a:hover {
-    text-decoration: underline;
-}
-
-#text04 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text04:not(:first-child) {
-    margin-top: 0.25rem !important;
-}
-
-#text04:not(:last-child) {
-    margin-bottom: 0.25rem !important;
-}
-
 #text05 {
-    text-align: center;
     text-transform: uppercase;
     color: #6b6767;
-    font-family: 'Sora', sans-serif;
     font-size: 1.25em;
     line-height: 1;
     font-weight: 700;
 }
 
-#text05 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text05 a {
-    text-decoration: none;
-}
-
-#text05 a:hover {
-    text-decoration: underline;
-}
-
-#text05 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text05:not(:first-child) {
-    margin-top: 1rem !important;
-}
-
-#text05:not(:last-child) {
-    margin-bottom: 1rem !important;
-}
-
 #text06 {
-    text-align: center;
     color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.025rem;
     width: calc(100% + 0.025rem);
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.875;
-    font-weight: 200 bold;
-}
-
-#text06 a:hover {
-    color: #309EDB;
-}
-
-#text06 a {
-    text-decoration: underline;
-}
-
-#text06 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
+    font-weight: 400;
 }
 
 #text07 {
     font-size: 1em;
     line-height: 1.875;
     color: #474747;
-    font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.025rem;
-    text-align: center;
     width: calc(100% + 0.025rem);
     font-weight: 200;
 }
 
-#text07 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text07 a:hover {
-    text-decoration: none;
-}
-
-#text07 a {
-    text-decoration: underline;
-}
-
 #text08 {
-    text-align: center;
     text-transform: uppercase;
     color: #00ffff;
-    font-family: 'Sora', sans-serif;
-    font-size: 1.25em;
+    font-size: 2em;
     line-height: 1;
     font-weight: 700;
 }
 
-#text08 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text08 a {
-    text-decoration: none;
-}
-
-#text08 a:hover {
-    text-decoration: underline;
-}
-
-#text08 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text08:not(:first-child) {
-    margin-top: 1rem !important;
-}
-
-#text08:not(:last-child) {
-    margin-bottom: 1rem !important;
-}
-
 #text09 {
-    text-align: center;
     text-transform: lowercase;
     color: #0011ff;
-    font-family: 'Sora', sans-serif;
     font-size: 0.875em;
     line-height: 1;
     font-weight: 400;
 }
 
-#text09 mark {
-    color: #FFFFFF;
-    background-color: transparent;
-}
-
-#text09 a {
-    text-decoration: none;
-}
-
-#text09 a:hover {
-    text-decoration: underline;
-}
-
-#text09 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
-}
-
-#text09:not(:first-child) {
-    margin-top: 0.25rem !important;
-}
-
-#text09:not(:last-child) {
-    margin-bottom: 0.25rem !important;
-}
-
 #text10 {
     text-transform: uppercase;
     color: #474747;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 0.4rem;
-    width: calc(100% + 0.4rem);
-    font-size: 1em;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-#text10 a {
-    text-decoration: underline;
-}
-
-#text10 a:hover {
-    text-decoration: none;
-}
-
-#text10 span.p:nth-child(n + 2) {
-    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    width: calc(100% + 0.1rem);
+    font-size: 2em;
+    line-height: 1.3;
+    font-weight: 500;
 }
 
 .buttons {
@@ -771,18 +605,22 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     white-space: nowrap;
 }
 
+.buttons:not(:first-child) {
+    margin-top: 2.0rem !important;
+}
+
+.buttons:not(:last-child) {
+    margin-bottom: 2.0rem !important;
+}
+
+.buttons li a:hover {
+    transform: scale(1.025);
+}
+
 #buttons01 {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons01:not(:first-child) {
-    margin-top: 2.0rem !important;
-}
-
-#buttons01:not(:last-child) {
-    margin-bottom: 2.0rem !important;
 }
 
 #buttons01 li a {
@@ -807,11 +645,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     transition: fill 0.25s ease;
 }
 
-#buttons01 li a .label {
-    direction: var(--site-language-direction);
-    overflow: hidden;
-}
-
 #buttons01 .button {
     background-color: #40A376;
     color: #FFFFFF;
@@ -825,22 +658,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     background-color: #30D98B !important;
 }
 
-#buttons01 li a:hover {
-    transform: scale(1.025);
-}
-
 #buttons02 {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons02:not(:first-child) {
-    margin-top: 2.0rem !important;
-}
-
-#buttons02:not(:last-child) {
-    margin-bottom: 2.0rem !important;
 }
 
 #buttons02 li a {
@@ -865,11 +686,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     transition: fill 0.25s ease;
 }
 
-#buttons02 li a .label {
-    direction: var(--site-language-direction);
-    overflow: hidden;
-}
-
 #buttons02 .button {
     background-color: #C28730;
     color: #FFFFFF;
@@ -883,22 +699,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     background-color: #EBC43D !important;
 }
 
-#buttons02 li a:hover {
-    transform: scale(1.025);
-}
-
 #buttons03 {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons03:not(:first-child) {
-    margin-top: 2.0rem !important;
-}
-
-#buttons03:not(:last-child) {
-    margin-bottom: 2.0rem !important;
 }
 
 #buttons03 li a {
@@ -923,11 +727,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     transition: fill 0.25s ease;
 }
 
-#buttons03 li a .label {
-    direction: var(--site-language-direction);
-    overflow: hidden;
-}
-
 #buttons03 .button {
     background-color: #8340A3;
     color: #FFFFFF;
@@ -939,10 +738,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #buttons03 .button:hover {
     background-color: #D930AA !important;
-}
-
-#buttons03 li a:hover {
-    transform: scale(1.025);
 }
 
 #buttons04 {
@@ -976,22 +771,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     background-color: #EBE33D !important;
 }
 
-#buttons04 li a:hover {
-    transform: scale(1.025);
-}
-
 #buttons05 {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons05:not(:first-child) {
-    margin-top: 2.0rem !important;
-}
-
-#buttons05:not(:last-child) {
-    margin-bottom: 2.0rem !important;
 }
 
 #buttons05 li a {
@@ -1016,11 +799,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     transition: fill 0.25s ease;
 }
 
-#buttons05 li a .label {
-    direction: var(--site-language-direction);
-    overflow: hidden;
-}
-
 #buttons05 .button {
     background-color: #4240a3;
     color: #FFFFFF;
@@ -1032,10 +810,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #buttons05 .button:hover {
     background-color: #0c21df !important;
-}
-
-#buttons05 li a:hover {
-    transform: scale(1.025);
 }
 
 .container > .wrapper {
