@@ -747,7 +747,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons04 li a {
-    display: inline-block;
+    display: inline-flex;
     width: 100vw;
     height: 3.75rem;
     line-height: 3.75rem;
