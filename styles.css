@@ -812,6 +812,47 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     background-color: #0c21df !important;
 }
 
+#buttons06 {
+    gap: 2.0rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#buttons06 li a {
+    display: inline-flex;
+    width: 100vw;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    padding: 0 1.875rem;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons06 li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.5em;
+    margin-left: -0.125em;
+    margin-right: calc(0.5em + 0rem);
+    transition: fill 0.25s ease;
+}
+
+#buttons06 .button {
+    background-color: #e91296;
+    color: #FFFFFF;
+    background-image: linear-gradient(45deg, rgba(234, 41, 41, 0.719) 0%, rgba(184, 22, 103, 0.836) 75%);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#buttons06 .button:hover {
+    background-color: #81055e !important;
+}
+
 .container > .wrapper {
     vertical-align: top;
     position: relative;
