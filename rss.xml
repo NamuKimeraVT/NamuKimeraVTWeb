@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Namu Vlogs</title>
+		<description>Descripción del RSS</description>
+		<link>http://www.sitiodelquesedeseapublicar.com/main.html</link>
+		<lastBuildDate>Mon, 06 Jan 2013 00:01:00 +0000 </lastBuildDate>
+		<pubDate>Mon, 06 Jan 2013 16:20:00 +0000 </pubDate>
+		<ttl>1800</ttl>
+		<item>
+			<title>Entrada dentro del RSS</title>
+			<description>Descripción de la entrada</description>
+			<link>http://www.sitiodelquesedeseapublicar.com/enero-2013.html</link>
+			<guid>clave única</guid>
+			<pubDate>Mon, 06 Jan 2013 17:20:00 +0000 </pubDate>
+		</item>
+	</channel>
+</rss>
