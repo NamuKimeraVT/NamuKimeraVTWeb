@@ -1,84 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -87,17 +7,7 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -140,9 +50,7 @@ body.is-loading #main {
     transform: perspective(1000px) rotateY(16.875deg);
 }
 
-body.is-instant #main,
-body.is-instant #main>.inner>*,
-body.is-instant #main>.inner>section>* {
+body.is-instant #main, body.is-instant #main>.inner>*, body.is-instant #main>.inner>section>* {
     transition: none !important;
 }
 
@@ -151,20 +59,15 @@ body.is-instant:after {
     transition: none !important;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
@@ -184,19 +87,14 @@ input::-moz-focus-inner {
     padding: 0
 }
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
+input[type="text"], input[type="email"], select, textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -278,46 +176,17 @@ a {
     transition: color 0.25s ease;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
     direction: var(--site-language-direction);
     position: relative;
 }
 
-h1 span.p,
-h2 span.p,
-h3 span.p,
-p span.p {
+h1 span.p, h2 span.p, h3 span.p, p span.p {
     display: block;
     position: relative;
 }
 
-h1 span[style],
-h2 span[style],
-h3 span[style],
-p span[style],
-h1 strong,
-h2 strong,
-h3 strong,
-p strong,
-h1 a,
-h2 a,
-h3 a,
-p a,
-h1 code,
-h2 code,
-h3 code,
-p code,
-h1 mark,
-h2 mark,
-h3 mark,
-p mark,
-h1 spoiler-text,
-h2 spoiler-text,
-h3 spoiler-text,
-p spoiler-text {
+h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 strong, h3 strong, p strong, h1 a, h2 a, h3 a, p a, h1 code, h2 code, h3 code, p code, h1 mark, h2 mark, h3 mark, p mark, h1 spoiler-text, h2 spoiler-text, h3 spoiler-text, p spoiler-text {
     -webkit-text-fill-color: currentcolor;
 }
 
@@ -420,7 +289,6 @@ p spoiler-text {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
 }
-
 
 .video {
     position: relative;
@@ -1216,13 +1084,11 @@ p spoiler-text {
     margin-bottom: calc(var(--padding-vertical) * -1) !important;
 }
 
-#container01.columns>.wrapper>.inner>div:first-child,
-#container01.columns>.wrapper>.inner>div:first-child>.full:first-child {
+#container01.columns>.wrapper>.inner>div:first-child, #container01.columns>.wrapper>.inner>div:first-child>.full:first-child {
     border-top-left-radius: inherit;
 }
 
-#container01.columns>.wrapper>.inner>div:last-child,
-#container01.columns>.wrapper>.inner>div:last-child>.full:first-child {
+#container01.columns>.wrapper>.inner>div:last-child, #container01.columns>.wrapper>.inner>div:last-child>.full:first-child {
     border-top-right-radius: inherit;
 }
 
@@ -1692,12 +1558,9 @@ p spoiler-text {
     color: #ff0000;
 }
 
-.section ul {
+.section ul li {
     list-style: none;
     padding: 0;
-}
-
-.section li {
     margin-bottom: 5px;
 }
 
@@ -1834,8 +1697,7 @@ form input[type="number"] {
     -moz-appearance: textfield;
 }
 
-form input[type="number"]::-webkit-inner-spin-button,
-form input[type="number"]::-webkit-outer-spin-button {
+form input[type="number"]::-webkit-inner-spin-button, form input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
@@ -1974,14 +1836,7 @@ form .actions button:disabled {
     fill: #309EDB;
 }
 
-#form02 input[type="text"],
-#form02 input[type="email"],
-#form02 input[type="tel"],
-#form02 input[type="number"],
-#form02 textarea,
-#form02 select,
-#form02 input[type="checkbox"]+label,
-#form02 .file {
+#form02 input[type="text"], #form02 input[type="email"], #form02 input[type="tel"], #form02 input[type="number"], #form02 textarea, #form02 select, #form02 input[type="checkbox"]+label, #form02 .file {
     text-transform: uppercase;
     font-size: 1em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -1990,13 +1845,7 @@ form .actions button:disabled {
     border-radius: 1.625rem;
 }
 
-#form02 input[type="text"],
-#form02 input[type="email"],
-#form02 input[type="tel"],
-#form02 input[type="number"],
-#form02 textarea,
-#form02 select,
-#form02 .file {
+#form02 input[type="text"], #form02 input[type="email"], #form02 input[type="tel"], #form02 input[type="number"], #form02 textarea, #form02 select, #form02 .file {
     padding-left: calc(0.025rem + 0.7875rem);
     color: #474747;
     border: solid 1px #CCCCCC;
@@ -2006,12 +1855,7 @@ form .actions button:disabled {
     color: #474747;
 }
 
-#form02 input[type="text"],
-#form02 input[type="email"],
-#form02 input[type="tel"],
-#form02 input[type="number"],
-#form02 select,
-#form02 .file {
+#form02 input[type="text"], #form02 input[type="email"], #form02 input[type="tel"], #form02 input[type="number"], #form02 select, #form02 .file {
     height: 2.25rem;
     padding: 0 0.7875rem;
     line-height: calc(2.25rem - 2px);
