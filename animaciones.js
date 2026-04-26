@@ -1,3 +1,5 @@
+alert("NamuKimeraVT © 2025 | Todos los derechos reservados");
+
 const contenido = document.getElementById("content");
 
 function openModal(src) {
