@@ -508,105 +508,90 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     margin-top: 1rem;
 }
 
-#text01 {
-    font-size: 1.25em;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #4c00ff;
-}
-
-#text02 {
-    font-size: 2em;
-    line-height: 1;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    width: calc(100% + 0.025rem);
-}
-
-#text03 {
-    font-size: 1.25em;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ff0000;
-}
-
-#text04 {
-    font-size: 0.875em;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: lowercase;
-    color: #00ccff;
-}
-
-#text05 {
-    font-size: 1.25em;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #6b6767;
-    width: calc(100% + 0.025rem);
-}
-
-#text06 {
-    font-size: 1em;
-    line-height: 1.875;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0.02rem;
-    width: calc(100% + 0.025rem);
-}
-
-#text07 {
-    font-size: 1em;
-    line-height: 1.875;
-    font-weight: 200;
-    color: #474747;
-    letter-spacing: 0.025rem;
-    width: calc(100% + 0.025rem);
-}
-
-#text08 {
-    font-size: 2em;
-    line-height: 1;
+#textmaintitle {
+    font-size: 3em;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #ff00ff;
 }
 
-#text09 {
-    font-size: 0.875em;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: lowercase;
-    color: #0011ff;
-}
-
-#text10 {
+#textmaintitle2 {
     font-size: 2em;
-    line-height: 1.3;
-    font-weight: 500;
+    font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
-    color: #474747;
-    letter-spacing: 0.1rem;
-    width: calc(100% + 0.1rem);
+    color: #4c00ff;
 }
 
-#textprice {
-    font-size: 1em;
-    line-height: 1;
-    font-weight: bold;
+#texttitle {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitle2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitle3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     color: #ff0000;
 }
 
-#textfooter {
-    font-size: 1em;
+#texttos1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttos2 {
+    font-size: 1.5em;
     font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttos3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #000000;
+}
+
+#textnav {
+    font-size: 1.25em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6b6767;
+}
+
+#textp {
+    font-size: 1em;
+    font-weight: 200;
+    color: #000000;
+}
+
+#textprice {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+#textfooter {
+    font-size: 1.6em;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
