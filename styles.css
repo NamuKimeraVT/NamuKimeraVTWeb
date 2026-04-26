@@ -451,7 +451,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     justify-content: var(--flex-alignment);
     letter-spacing: 0;
     padding: 0;
-    text-align: center;
     font-family: 'Sora', sans-serif;
 }
 
@@ -463,7 +462,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    text-align: center;
     text-decoration: none;
     vertical-align: middle;
     text-transform: uppercase;
@@ -474,7 +472,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    text-align: center;
     text-decoration: none;
     vertical-align: middle;
     text-transform: uppercase;
@@ -523,6 +520,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     font-size: 2em;
     line-height: 1;
     font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     color: #000000;
     width: calc(100% + 0.025rem);
@@ -574,7 +572,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text08 {
     font-size: 2em;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 900;
+    text-align: center;
     text-transform: uppercase;
     color: #ff00ff;
 }
@@ -595,6 +594,22 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
     color: #474747;
     letter-spacing: 0.1rem;
     width: calc(100% + 0.1rem);
+}
+
+#textprice {
+    font-size: 1em;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+#textfooter {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .buttons {
@@ -1082,11 +1097,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 .section p {
     line-height: 1.6;
     color: #555;
-}
-
-.price {
-    font-weight: bold;
-    color: #ff0000;
 }
 
 .section ul li {
