@@ -624,11 +624,11 @@ p spoiler-text {
 }
 
 .text:not(:first-child) {
-    margin-top: 1rem !important;
+    margin-top: 1rem;
 }
 
 .text:not(:last-child) {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem;
 }
 
 .text li a:hover {
@@ -721,7 +721,7 @@ p spoiler-text {
 }
 
 #textfooter {
-    font-size: 1.6em;
+    font-size: 1.75em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -2264,17 +2264,6 @@ main {
     * {
         scroll-behavior: auto !important;
     }
-}
-
-footer {
-    margin-top: 22px;
-    color: rgba(255, 255, 255, .55);
-    font-size: 12.5px;
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-    padding: 10px 0 0;
 }
 
 kbd {
