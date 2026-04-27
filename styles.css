@@ -151,11 +151,6 @@ body.is-instant:after {
     transition: none !important;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
 blockquote,
 q {
     quotes: none;
@@ -557,10 +552,6 @@ p spoiler-text {
     border-bottom-right-radius: inherit;
 }
 
-#image01 {
-    text-align: center;
-}
-
 #image01:not(:first-child) {
     margin-top: 1.5rem !important;
 }
@@ -648,7 +639,7 @@ p spoiler-text {
 }
 
 #textmaintitle2 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -657,7 +648,7 @@ p spoiler-text {
 
 #texttitle {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -666,37 +657,78 @@ p spoiler-text {
 #texttitle2 {
     font-size: 1.5em;
     font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
 
 #texttitle3 {
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 1.25em;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     color: #ff0000;
 }
 
-#texttos1 {
-    font-size: 1.8em;
+#texttitlecom {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitlecom2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitlecom3 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitlecom4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4c00ff;
+}
+
+#texttitletos1 {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#texttitletos2 {
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
 
-#texttos2 {
-    font-size: 1.5em;
+#texttitletos3 {
+    font-size: 1.25em;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
 
-#texttos3 {
-    font-size: 1em;
-    font-weight: 400;
+#texttos {
+    font-size: 1.25em;
+    font-weight: 200;
+    text-align: justify;
     color: #000000;
 }
 
@@ -710,7 +742,8 @@ p spoiler-text {
 
 #textp {
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 500;
+    text-align: justify;
     color: #000000;
 }
 
@@ -731,10 +764,10 @@ p spoiler-text {
 .buttons {
     cursor: default;
     display: flex;
+    list-style: none;
     justify-content: var(--flex-alignment);
     letter-spacing: 0;
     padding: 0;
-    font-size: 1.125em;
     font-weight: 400;
     font-family: 'Sora', sans-serif;
 }
@@ -1377,16 +1410,6 @@ form .actions button:disabled {
     pointer-events: none;
 }
 
-@keyframes button-spinner {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 #form02 .inner>* {
     margin: 1rem 0 0 0;
     max-width: 100%;
@@ -1643,8 +1666,7 @@ form .actions button:disabled {
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -1944,7 +1966,6 @@ main {
     object-fit: cover;
 }
 
-/* CSS-only “media” for demo: data-URI inline SVGs */
 .tile .media[data-kind="image"] {
     filter: saturate(1.05) contrast(1.02);
 }
@@ -2015,7 +2036,6 @@ main {
     box-shadow: 0 0 0 3px rgba(124, 247, 255, .12);
 }
 
-/* Mosaic variations */
 .tile.is-wide {
     grid-column: span 6;
     min-height: 230px;
@@ -2155,8 +2175,7 @@ main {
     padding: 14px;
 }
 
-.lb-media img,
-.lb-media video {
+.lb-media img, .lb-media video {
     width: 100%;
     height: 100%;
     max-height: min(62vh, 560px);
