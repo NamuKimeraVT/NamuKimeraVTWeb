@@ -40,104 +40,21 @@
     </ul>
 </nav>
 
-<body class="body">
-    <div class="wrap">
-        <header>
-            <div>
-                <div class="brand">
-                    <div class="mark" aria-hidden="true"></div>
-                    <div>
-                        <h1>Mi Portfolio</h1>
-                        <p class="lead">
-                            Aqui estan todos mis trabajos, desde dibujos hasta videos y audios. Usa los filtros para encontrar lo que buscas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="controls" aria-label="Controles de galería">
-                <div class="toolbar" role="group" aria-label="Filtros">
-                    <div class="chipset" role="group" aria-label="Filtrar por tipo">
-                        <button class="chip" type="button" data-filter="all" aria-pressed="true">Todo</button>
-                        <button class="chip" type="button" data-filter="image" aria-pressed="false">Imágenes</button>
-                        <button class="chip" type="button" data-filter="video" aria-pressed="false">Videos</button>
-                        <button class="chip" type="button" data-filter="audio" aria-pressed="false">Audios</button>
-                    </div>
-                </div>
-
-                <div class="search">
-                    <div class="field">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" stroke="rgba(255,255,255,.8)" stroke-width="1.6" />
-                            <path d="M16.5 16.5 21 21" stroke="rgba(255,255,255,.8)" stroke-width="1.6" stroke-linecap="round" />
-                        </svg>
-                        <input id="q" type="search" placeholder="Buscar: “cielo”, “neón”, “podcast”…" autocomplete="off" />
-                        <button class="clearBtn" type="button" id="clear" aria-label="Limpiar búsqueda" title="Limpiar">×</button>
-                    </div>
-                </div>
-
-                <div class="meta">
-                    <span class="pill" id="count">0 elementos</span>
-                    <span class="pill">Click / Enter para abrir</span>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <section class="gallery" id="gallery" aria-label="Galería de medios"></section>
-        </main>
-
-        <footer>
-            <span>Sin imágenes externas: posters con SVG/gradientes. Reemplaza <code>src</code> por tus archivos
-                locales.</span>
-            <span class="hint">Accesible: foco visible, roles/aria, y control por teclado.</span>
-        </footer>
-    </div>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visor de medios">
-        <div class="lb-backdrop" data-close="1" aria-hidden="true"></div>
-
-        <div class="lb-panel" role="document">
-            <div class="lb-top">
-                <div class="lb-title">
-                    <span class="dot" id="lbDot" aria-hidden="true"></span>
-                    <strong id="lbTitle">Título</strong>
-                    <span id="lbMeta">—</span>
-                </div>
-                <div class="lb-actions">
-                    <button class="iconBtn" type="button" id="lbPrev" aria-label="Anterior (flecha izquierda)">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M14.5 5.5 8 12l6.5 6.5" stroke="rgba(255,255,255,.9)" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <button class="iconBtn" type="button" id="lbNext" aria-label="Siguiente (flecha derecha)">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M9.5 5.5 16 12l-6.5 6.5" stroke="rgba(255,255,255,.9)" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <button class="iconBtn" type="button" id="lbClose" aria-label="Cerrar (Escape)">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M7 7 17 17M17 7 7 17" stroke="rgba(255,255,255,.9)" stroke-width="1.8"
-                                stroke-linecap="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="lb-media" id="lbMedia" aria-label="Contenido"></div>
-
-            <div class="lb-bottom">
-                <button class="navBtn" type="button" id="lbPrev2" aria-label="Anterior">
-                    <span aria-hidden="true">←</span> Anterior
-                </button>
-                <span class="hint">Teclado: <kbd>Esc</kbd>, <kbd>←</kbd>, <kbd>→</kbd></span>
-                <button class="navBtn" type="button" id="lbNext2" aria-label="Siguiente">
-                    Siguiente <span aria-hidden="true">→</span>
-                </button>
-            </div>
+<body class="is-loading">
+    <h1 id="textmaintitle" class="text"><strong>♦ PORTFOLIO ♦</strong></h1>
+    <div class="container">
+        <div class="image-column">
+            <img src="img/Foto de Perfil.png" style="width: 100%;">
+        </div>
+        <div class="content-column">
+            <p id="textp" class="text">
+                <span>
+                    <span>
+                        Este es un espacio donde comparto algunos de mis trabajos y proyectos personales o que hice para clientes.
+                        Aquí podrás encontrar una variedad de obras que reflejan mi estilo artístico y mis intereses creativos
+                    </span>
+                </span>
+            </p>
         </div>
     </div>
 </body>
