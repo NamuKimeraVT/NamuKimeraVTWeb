@@ -40,7 +40,6 @@ function initLightbox() {
 
         lightbox.image.src = image.src;
         lightbox.image.alt = image.alt || '';
-        lightbox.caption.textContent = image.alt || 'Imagen del portfolio';
         lightbox.counter.textContent = `${currentLightboxIndex + 1} de ${images.length}`;
         lightbox.overlay.classList.remove('hidden');
     }
