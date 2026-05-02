@@ -1752,6 +1752,24 @@ form .actions button:disabled {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
+.lightbox-media {
+    width: 100%;
+    max-height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-media img,
+.lightbox-media video,
+.lightbox-media audio {
+    width: 100%;
+    max-width: 100%;
+    max-height: 72vh;
+    display: block;
+    border-radius: 12px;
+}
+
 .lightbox-image {
     max-width: 100%;
     max-height: 72vh;
