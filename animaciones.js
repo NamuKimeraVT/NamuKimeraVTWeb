@@ -164,15 +164,19 @@ function initLightbox() {
 
 function createCarousel(carousel) {
     const track = carousel.querySelector('.carousel-track');
-    const items = Array.from(track.children);
     const prevButton = carousel.querySelector('.carousel-button.prev');
     const nextButton = carousel.querySelector('.carousel-button.next');
+    if (!track || !prevButton || !nextButton) return;
+
+    const items = Array.from(track.children).filter((child) => child instanceof HTMLElement);
+    if (!items.length) return;
+
     let currentIndex = 0;
     const lightboxController = window.__lightboxController;
 
     function updateCarousel() {
         if (!items.length) return;
-        const width = items[0].getBoundingClientRect().width;
+        const width = carousel.clientWidth || items[0].getBoundingClientRect().width || 0;
         track.style.transform = `translateX(-${currentIndex * width}px)`;
     }
 
@@ -248,6 +252,7 @@ function createCarousel(carousel) {
     });
 
     window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);
 
     updateCarousel();
 }
