@@ -102,7 +102,6 @@ section {
 }
 
 body {
-    line-height: 1.0;
     line-height: 1;
     -webkit-text-size-adjust: none;
     min-height: var(--viewport-height);
@@ -111,6 +110,10 @@ body {
     word-wrap: break-word;
     background-color: #FFFFFF;
     overflow: auto !important;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 body:after {
