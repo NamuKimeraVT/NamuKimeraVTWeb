@@ -209,7 +209,7 @@ textarea {
 }
 
 html {
-    font-size: 15pt;
+    font-size: 1rem;
 }
 
 u {
@@ -227,13 +227,13 @@ em {
 
 code {
     background-color: rgba(144, 144, 144, 0.25);
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     font-family: 'Lucida Console', 'Courier New', monospace;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: normal;
     letter-spacing: 0;
-    margin: 0 0.25em;
-    padding: 0.25em 0.5em;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0.5rem;
     text-indent: 0;
 }
 
@@ -634,7 +634,7 @@ p spoiler-text {
 }
 
 #textmaintitle {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -642,7 +642,7 @@ p spoiler-text {
 }
 
 #textmaintitle2 {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -650,7 +650,7 @@ p spoiler-text {
 }
 
 #texttitle {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -658,7 +658,7 @@ p spoiler-text {
 }
 
 #texttitle2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -666,7 +666,7 @@ p spoiler-text {
 }
 
 #texttitle3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -674,7 +674,7 @@ p spoiler-text {
 }
 
 #texttitlecom {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -682,7 +682,7 @@ p spoiler-text {
 }
 
 #texttitlecom2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: justify;
     text-transform: uppercase;
@@ -690,14 +690,14 @@ p spoiler-text {
 }
 
 #texttitlecom3 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #000000;
 }
 
 #texttitlecom4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
@@ -705,7 +705,7 @@ p spoiler-text {
 }
 
 #texttitletos1 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -713,7 +713,7 @@ p spoiler-text {
 }
 
 #texttitletos2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -721,7 +721,7 @@ p spoiler-text {
 }
 
 #texttitletos3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -729,14 +729,14 @@ p spoiler-text {
 }
 
 #texttos {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 200;
     text-align: justify;
     color: #000000;
 }
 
 #textnav {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -744,20 +744,20 @@ p spoiler-text {
 }
 
 #textp {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
     text-align: justify;
     color: #000000;
 }
 
 #textprice {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     color: #ff0000;
 }
 
 #textfooter {
-    font-size: 1.75em;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -789,6 +789,25 @@ p spoiler-text {
     text-transform: uppercase;
     border-radius: 2rem;
     white-space: nowrap;
+    display: inline-flex;
+    width: 100vw;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    padding: 0 1.875rem;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttons li a svg {
+    display: block;
+    fill: #FFFFFF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 18px;
+    width: 2.5rem;
+    margin-left: -0.125rem;
+    margin-right: calc(0.5rem + 0rem);
+    transition: fill 0.25s ease;
 }
 
 .buttons:not(:first-child) {
@@ -807,28 +826,6 @@ p spoiler-text {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons01 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons01 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
 }
 
 #buttons01 .button {
@@ -850,28 +847,6 @@ p spoiler-text {
     flex-wrap: wrap;
 }
 
-#buttons02 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons02 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
-}
-
 #buttons02 .button {
     background-color: #C28730;
     color: #FFFFFF;
@@ -889,28 +864,6 @@ p spoiler-text {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons03 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons03 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
 }
 
 #buttons03 .button {
@@ -932,18 +885,6 @@ p spoiler-text {
     flex-wrap: wrap;
 }
 
-#buttons04 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    direction: var(--site-language-direction);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
 #buttons04 .button {
     background-color: #E3AC22;
     color: #FFFFFF;
@@ -961,28 +902,6 @@ p spoiler-text {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons05 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons05 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
 }
 
 #buttons05 .button {
@@ -1004,28 +923,6 @@ p spoiler-text {
     flex-wrap: wrap;
 }
 
-#buttons06 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons06 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
-}
-
 #buttons06 .button {
     background-color: #e91296;
     color: #FFFFFF;
@@ -1045,32 +942,10 @@ p spoiler-text {
     flex-wrap: wrap;
 }
 
-#buttons07 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons07 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
-}
-
 #buttons07 .button {
     background-color: #00ffff;
     color: #FFFFFF;
-    background-image: linear-gradient(45deg, rgba(0, 255, 157, 0.719) 0%, rgba(184, 22, 103, 0.836) 75%);
+    background-image: linear-gradient(45deg, rgba(0, 255, 157, 0.719) 0%, rgba(30, 10, 212, 0.836) 75%);
     background-position: 0% 0%;
     background-repeat: repeat;
     background-size: cover;
@@ -1084,28 +959,6 @@ p spoiler-text {
     gap: 2.0rem;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#buttons08 li a {
-    display: inline-flex;
-    width: 100vw;
-    height: 3.75rem;
-    line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons08 li a svg {
-    display: block;
-    fill: #FFFFFF;
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 100%;
-    min-width: 18px;
-    width: 2.5em;
-    margin-left: -0.125em;
-    margin-right: calc(0.5em + 0rem);
-    transition: fill 0.25s ease;
 }
 
 #buttons08 .button {
@@ -1429,7 +1282,7 @@ form .actions button:disabled {
 #form02 label:first-child {
     margin: 0.25rem 0 0.75rem 0;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
