@@ -209,7 +209,7 @@ textarea {
 }
 
 html {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 u {
@@ -326,18 +326,6 @@ p spoiler-text {
     position: relative;
     z-index: 2;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-}
-
-#wrapper02 {
-    -webkit-overflow-scrolling: touch;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    position: center;
-    z-index: 2;
-    padding: 5px;
 }
 
 #main {
@@ -642,7 +630,7 @@ p spoiler-text {
 }
 
 #textmaintitle2 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -650,7 +638,7 @@ p spoiler-text {
 }
 
 #texttitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
