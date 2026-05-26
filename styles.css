@@ -621,7 +621,7 @@ p spoiler-text {
     margin-top: 1rem;
 }
 
-#textmaintitle {
+#texttitlemain1 {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
@@ -629,7 +629,7 @@ p spoiler-text {
     color: #ff00ff;
 }
 
-#textmaintitle2 {
+#texttitlemain2 {
     font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
@@ -637,7 +637,7 @@ p spoiler-text {
     color: #4c00ff;
 }
 
-#texttitle {
+#texttitlesec1 {
     font-size: 1.8rem;
     font-weight: 900;
     text-align: center;
@@ -645,7 +645,7 @@ p spoiler-text {
     color: #000000;
 }
 
-#texttitle2 {
+#texttitlesec2 {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
@@ -653,7 +653,7 @@ p spoiler-text {
     color: #000000;
 }
 
-#texttitle3 {
+#texttitlesec3 {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
@@ -717,7 +717,7 @@ p spoiler-text {
 }
 
 #texttos {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 200;
     text-align: justify;
     color: #000000;
