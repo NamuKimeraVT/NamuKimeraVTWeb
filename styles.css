@@ -701,14 +701,14 @@ p spoiler-text {
 }
 
 #textp {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: justify;
     color: #000000;
 }
 
 #textprice {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #ff0000;
 }
