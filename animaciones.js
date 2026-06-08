@@ -119,6 +119,18 @@ function initLightbox() {
         const media = buildMediaElement(item);
         currentMediaElement = media.element;
         lightbox.mediaContainer.appendChild(media.element);
+
+        if (item.link) {
+            currentMediaElement.style.cursor = 'pointer';
+            currentMediaElement.addEventListener('click', () => {
+                if (item.target === '_blank') {
+                    window.open(item.link, '_blank');
+                } else {
+                    window.location.href = item.link;
+                }
+            });
+        }
+
         lightbox.caption.textContent = media.caption;
         lightbox.counter.textContent = `${currentLightboxIndex + 1} de ${mediaItems.length}`;
         lightbox.overlay.classList.remove('hidden');
@@ -229,6 +241,9 @@ function createCarousel(carousel) {
             const src = media.src || Array.from(media.querySelectorAll('source')).map((source) => source.src)[0] || null;
             const sources = Array.from(media.querySelectorAll('source')).map((source) => ({ src: source.src, type: source.type })).filter(Boolean);
             const caption = media.alt || media.getAttribute('data-caption') || '';
+            const linkEl = item.querySelector('a[href]');
+            const link = linkEl ? linkEl.href : null;
+            const target = linkEl ? linkEl.target : null;
 
             return {
                 element: media,
@@ -237,14 +252,28 @@ function createCarousel(carousel) {
                 sources,
                 alt: media.alt || '',
                 caption,
+                link,
+                target,
             };
         })
         .filter(Boolean);
+
+    items.forEach((item, itemIndex) => {
+        const linkEl = item.querySelector('a[href]');
+        if (!linkEl) return;
+        linkEl.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            if (!lightboxController) return;
+            lightboxController.open(mediaItems, itemIndex);
+        });
+    });
 
     mediaItems.forEach((itemData, itemIndex) => {
         const mediaElement = itemData.element;
         mediaElement.style.cursor = 'pointer';
         mediaElement.addEventListener('click', (event) => {
+            event.preventDefault();
             event.stopPropagation();
             if (!lightboxController) return;
             lightboxController.open(mediaItems, itemIndex);

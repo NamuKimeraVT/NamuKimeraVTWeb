@@ -1488,6 +1488,12 @@ form .actions button:disabled {
     overflow: hidden;
 }
 
+.carousel-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-item img,
 .carousel-item video {
     width: 100%;
