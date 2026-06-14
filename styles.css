@@ -1759,6 +1759,10 @@ audio {
     background: rgba(0, 0, 0, 0.05);
 }
 
+.orientation-subgroup.simples {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 900px) {
     .portfolio-columns {
         grid-template-columns: 1fr;
