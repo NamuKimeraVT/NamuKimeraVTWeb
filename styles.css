@@ -1689,11 +1689,11 @@ audio {
 }
 
 .portfolio-column.vertical {
-    border-color: rgba(58, 123, 213, 0.4);
+    border-color: rgba(0, 60, 255, 1);
 }
 
 .portfolio-column.horizontal {
-    border-color: rgba(219, 108, 74, 0.4);
+    border-color: rgba(219, 108, 74, 1);
 }
 
 .orientation-labels {
@@ -1717,11 +1717,11 @@ audio {
 }
 
 .portfolio-column.vertical h4 {
-    color: #1f4f8a;
+    color: rgb(0, 60, 255, 1);
 }
 
 .portfolio-column.horizontal h4 {
-    color: #8a3f1f;
+    color: rgb(219, 108, 74, 1);
 }
 
 .portfolio-column .carousel {
