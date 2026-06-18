@@ -646,7 +646,7 @@ p spoiler-text {
 }
 
 #texttitlesec2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -654,7 +654,7 @@ p spoiler-text {
 }
 
 #texttitlesec3 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -662,7 +662,7 @@ p spoiler-text {
 }
 
 #texttitlecom {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
