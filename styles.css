@@ -1106,18 +1106,24 @@ nav li a:hover {
 
 /* Carrusel */
 .carousel {
-    position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    position: relative;
     width: 100%;
-    max-width: 100%;
-    max-height: 600px;
 }
 
+/* La pista que se mueve debe tener flex y no romper la línea */
 .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Cada elemento de la vista previa DEBE medir el 100% del carrusel */
+.carousel-track > * {
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-item {
