@@ -42,44 +42,45 @@
 
 <body class="is-loading">
     <div id="wrapper">
-        <div id="main">
-            <div class="inner">
-                <div id="image01" class="image">
-                    <span class="frame">
-                        <img src="img/Foto de Perfil.png" />
-                    </span>
-                </div>
-                <p id="texttitlesec1" class="text">Forma de Contacto</p>
-                <p id="textp" class="text">
-                    Usa este formulario para preguntarme lo que quieras, cosas como collabs, trabajo, etc.
-                </p>
-                <form action="https://formsubmit.co/namuquimera@gmail.com" id="form02" method="post">
-                    <div class="inner">
-                        <div class="field">
-                            <input type="text" name="name" id="form02-name" placeholder="Nombre" maxlength="128"
-                                required />
-                        </div>
-                        <div class="field">
-                            <input type="email" name="email" id="form02-email" placeholder="Email" maxlength="128"
-                                required />
-                        </div>
-                        <div class="field">
-                            <textarea data-gramm_editor="false" name="message" id="form02-message" placeholder="Mensaje"
-                                maxlength="16384" required></textarea>
-                        </div>
-                        <div class="actions">
-                            <button type="submit">Enviar</button>
-                        </div>
+        <div class="inner">
+            <div id="image01" class="image">
+                <span class="frame">
+                    <img src="img/Foto de Perfil.png" />
+                </span>
+            </div>
+            <p id="texttitlesec1" class="text">Forma de Contacto</p>
+            <p id="textp" class="text">
+                Usa este formulario para preguntarme lo que quieras, cosas como collabs, trabajo, etc.
+            </p>
+            <div class="form-container">
+                <!-- El id "form-contacto" coincide con el que usaremos en JS -->
+                <form id="form-contacto">
+
+                    <div class="form-group">
+                        <label for="input-nombre">Nombre</label>
+                        <input type="text" id="input-nombre" placeholder="Tu nombre completo" required>
                     </div>
-                    <input type="hidden" name="id" value="form02" />
+
+                    <div class="form-group">
+                        <label for="input-correo">Correo Electrónico</label>
+                        <input type="email" id="input-correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-mensaje">Mensaje</label>
+                        <textarea id="input-mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
                 </form>
             </div>
         </div>
     </div>
+
 </body>
 <script src="animaciones.js"></script>
-<script src="BACKEND/datosproc.js"></script>
-<script src="BACKEND/contacto.py"></script>
+<script src="BACKEND/formulario.js"></script>
+<script src="BACKEND/app.py"></script>
 <footer>
     <h1 id="textfooter" class="text"> © Copyright 2026 | NamuKimeraVT's Official WebSite | </h1>
 </footer>
