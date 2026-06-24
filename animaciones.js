@@ -188,8 +188,13 @@ function createCarousel(carousel) {
 
     function updateCarousel() {
         if (!items.length) return;
-        const width = carousel.clientWidth || items[0].getBoundingClientRect().width || 0;
-        track.style.transform = `translateX(-${currentIndex * width}px)`;
+        // Obtenemos el ancho real del contenedor del carrusel
+        const rect = carousel.getBoundingClientRect();
+        const width = rect.width || carousel.clientWidth || 0;
+        
+        if (width > 0) {
+            track.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
     }
 
     function changeSlide(delta) {
@@ -280,10 +285,21 @@ function createCarousel(carousel) {
         });
     });
 
+    // Eventos nativos de redimensionamiento
     window.addEventListener('resize', updateCarousel);
     window.addEventListener('load', updateCarousel);
 
+    // SOLUCIÓN EXTRA: Usar ResizeObserver para recalcular cuando el carrusel sea visible en el DOM
+    if (window.ResizeObserver) {
+        const resizeObserver = new ResizeObserver(() => {
+            updateCarousel();
+        });
+        resizeObserver.observe(carousel);
+    }
+
+    // Ejecución inicial con un pequeño retraso por si el DOM no calculó dimensiones
     updateCarousel();
+    setTimeout(updateCarousel, 100);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
