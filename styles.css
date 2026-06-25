@@ -524,15 +524,15 @@ spoiler-text.active {
 }
 
 #texttitlesec2 {
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
 
 #texttitlesec3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -565,7 +565,7 @@ spoiler-text.active {
 
 #texttos {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 500;
     text-align: justify;
     color: #000000;
 }
@@ -606,7 +606,6 @@ spoiler-text.active {
     justify-content: var(--flex-alignment);
     letter-spacing: 0;
     padding: 0;
-    font-weight: 400;
     font-family: 'Sora', sans-serif;
 }
 
@@ -628,8 +627,6 @@ spoiler-text.active {
     width: 100vw;
     height: 3.75rem;
     line-height: 3.75rem;
-    padding: 0 1.875rem;
-    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .buttons li a svg {
@@ -646,11 +643,11 @@ spoiler-text.active {
 }
 
 .buttons:not(:first-child) {
-    margin-top: 2.0rem !important;
+    margin-top: 2.0rem;
 }
 
 .buttons:not(:last-child) {
-    margin-bottom: 2.0rem !important;
+    margin-bottom: 2.0rem;
 }
 
 .buttons li a:hover {
@@ -673,7 +670,7 @@ spoiler-text.active {
 }
 
 #buttons01 .button:hover {
-    background-color: #30D98B !important;
+    background-color: #30D98B;
 }
 
 #buttons02 {
@@ -692,7 +689,7 @@ spoiler-text.active {
 }
 
 #buttons02 .button:hover {
-    background-color: #EBC43D !important;
+    background-color: #EBC43D;
 }
 
 #buttons03 {
@@ -711,7 +708,7 @@ spoiler-text.active {
 }
 
 #buttons03 .button:hover {
-    background-color: #D930AA !important;
+    background-color: #D930AA;
 }
 
 #buttons04 {
@@ -730,7 +727,7 @@ spoiler-text.active {
 }
 
 #buttons04 .button:hover {
-    background-color: #EBE33D !important;
+    background-color: #EBE33D;
 }
 
 #buttons05 {
@@ -749,7 +746,7 @@ spoiler-text.active {
 }
 
 #buttons05 .button:hover {
-    background-color: #0c21df !important;
+    background-color: #0c21df;
 }
 
 #buttons06 {
@@ -768,7 +765,7 @@ spoiler-text.active {
 }
 
 #buttons06 .button:hover {
-    background-color: #81055e !important;
+    background-color: #81055e;
 }
 
 #buttons07 {
@@ -787,7 +784,7 @@ spoiler-text.active {
 }
 
 #buttons07 .button:hover {
-    background-color: #00ff95 !important;
+    background-color: #00ff95;
 }
 
 #buttons08 {
@@ -806,7 +803,7 @@ spoiler-text.active {
 }
 
 #buttons08 .button:hover {
-    background-color: #81055e !important;
+    background-color: #81055e;
 }
 
 .image-column {
@@ -1148,11 +1145,11 @@ spoiler-text.active {
 .portfolio-column {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 18px;
-    padding: 22px;
+    border-radius: 20px;
+    padding: 20px;
     overflow: hidden;
     max-width: 100%;
 }
@@ -1163,26 +1160,6 @@ spoiler-text.active {
 
 .portfolio-column.horizontal {
     border-color: rgba(219, 108, 74, 1);
-}
-
-.orientation-labels {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: 10px 0 24px 0;
-}
-
-.orientation-label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(238, 238, 238, 0.8);
-    border-radius: 999px;
-    padding: 10px 16px;
-    color: #333;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .portfolio-column.vertical h4 {
@@ -1212,7 +1189,7 @@ spoiler-text.active {
     padding: 16px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
+    border-radius: 20px;
     overflow: hidden;
     width: 100%;
 }
