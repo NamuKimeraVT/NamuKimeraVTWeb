@@ -358,9 +358,9 @@ p spoiler-text {
 }
 
 #main>.inner {
-    --padding-horizontal: 1rem;
-    --padding-vertical: 0em;
-    --spacing: 0em;
+    --padding-horizontal: 3rem;
+    --padding-vertical: 0rem;
+    --spacing: 0rem;
     --width: 35rem;
     border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
     max-width: 100%;
