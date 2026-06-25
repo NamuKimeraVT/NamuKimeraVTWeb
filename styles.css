@@ -638,11 +638,11 @@ spoiler-text.active {
 }
 
 .buttons:not(:first-child) {
-    margin-top: 2.0rem;
+    margin-top: 2.0rem !important;
 }
 
 .buttons:not(:last-child) {
-    margin-bottom: 2.0rem;
+    margin-bottom: 2.0rem !important;
 }
 
 .buttons li a:hover {
