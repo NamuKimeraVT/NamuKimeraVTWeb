@@ -220,10 +220,6 @@ spoiler-text.active {
     --flex-alignment: flex-start;
     --indent-left: 1;
     --indent-right: 0;
-    --border-radius-tl: 0.25rem;
-    --border-radius-tr: 0.25rem;
-    --border-radius-br: 0.25rem;
-    --border-radius-bl: 0.25rem;
     align-items: center;
     display: flex;
     flex-grow: 0;
@@ -238,10 +234,10 @@ spoiler-text.active {
     transform: perspective(1000px) rotateY(0deg);
     transform-origin: 50% 50%;
     transition: opacity 0.75s ease 0s, transform 0.75s ease 0s;
-    opacity: 1.0;
-    transform: none;
-    transition: none;
-    filter: none;
+    opacity: 1.0 !important;
+    transform: none !important;
+    transition: none !important;
+    filter: none !important;
 }
 
 #main>.inner {
@@ -255,7 +251,7 @@ spoiler-text.active {
     width: var(--width);
     z-index: 1;
     padding: var(--padding-vertical) var(--padding-horizontal);
-    opacity: 1.0;
+    opacity: 1.0 !important;
 }
 
 #main>.inner>* {
@@ -268,7 +264,6 @@ spoiler-text.active {
     max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
     width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
 }
-
 
 #main .container.full:first-child>.wrapper {
     border-top-left-radius: inherit;
