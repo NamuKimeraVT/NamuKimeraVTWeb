@@ -900,8 +900,7 @@ spoiler-text.active {
 }
 
 /* Inputs y Textarea */
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #cccccc;
@@ -911,8 +910,7 @@ spoiler-text.active {
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
     border-color: #007bff;
     outline: none;
 }
@@ -1013,7 +1011,7 @@ spoiler-text.active {
     border: none;
     color: white;
     font-size: 2rem;
-    padding: 5px 12px;
+    padding: 5px;
     cursor: pointer;
     border-radius: 50%;
     user-select: none;
@@ -1059,7 +1057,7 @@ spoiler-text.active {
     max-height: 92vh;
     padding: 20px;
     display: grid;
-    gap: 12px;
+    gap: 10px;
     background: rgba(0, 0, 0, 0.418);
     border-radius: 18px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
@@ -1094,8 +1092,8 @@ spoiler-text.active {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    font-size: 0.95rem;
-    gap: 12px;
+    font-size: 1em;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -1104,7 +1102,7 @@ spoiler-text.active {
     border: none;
     color: #fff;
     background: rgba(0, 0, 0, 0.56);
-    padding: 10px 14px;
+    padding: 10px;
     border-radius: 50%;
     font-size: 1.35rem;
     cursor: pointer;
@@ -1121,13 +1119,13 @@ spoiler-text.active {
 }
 
 .lightbox-nav.prev {
-    left: 14px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .lightbox-nav.next {
-    right: 14px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1135,9 +1133,9 @@ spoiler-text.active {
 .portfolio-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 10px;
     align-items: start;
-    margin-top: 24px;
+    margin-top: 20px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -1148,8 +1146,8 @@ spoiler-text.active {
     gap: 10px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px;
     overflow: hidden;
     max-width: 100%;
 }
@@ -1177,7 +1175,7 @@ spoiler-text.active {
 .orientation-subgroups {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 5px;
     width: 100%;
     overflow: hidden;
 }
@@ -1185,8 +1183,8 @@ spoiler-text.active {
 .orientation-subgroup {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 16px;
+    gap: 5px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
@@ -1207,17 +1205,4 @@ spoiler-text.active {
 
 .orientation-subgroup.simples {
     background: rgba(0, 0, 0, 0.05);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .carousel-container {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 900px) {
-    .portfolio-columns {
-        grid-template-columns: 1fr;
-    }
 }
