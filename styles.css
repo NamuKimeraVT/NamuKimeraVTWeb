@@ -574,7 +574,7 @@ spoiler-text.active {
 }
 
 #textp {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: justify;
     color: #000000;
@@ -818,9 +818,9 @@ spoiler-text.active {
     overflow-x: hidden;
 }
 
-.interior-section01 {
+.interior-section {
     background-color: #838383;
-    padding: 15px;
+    padding: 1em;
     border-radius: 10px;
     margin: 8px 0;
 }
@@ -828,8 +828,8 @@ spoiler-text.active {
 .content-block {
     margin-top: 0.2rem;
     padding: 5px;
-    border: 0.5px solid #0004ff;
-    border-radius: 10px;
+    border: 0.1rem solid #0004ff;
+    border-radius: 1em;
 }
 
 .column {
@@ -889,9 +889,9 @@ spoiler-text.active {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #666666;
+    color: #000000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 /* Inputs y Textarea */
@@ -900,7 +900,7 @@ spoiler-text.active {
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1em;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
@@ -917,9 +917,9 @@ spoiler-text.active {
 
 /* Botón de envío */
 .btn-enviar {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+    --width: 40rem;
+    padding: 10px;
+    background-color: #0000ff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -930,7 +930,77 @@ spoiler-text.active {
 }
 
 .btn-enviar:hover {
-    background-color: #0056b3;
+    background-color: #ff00ff;
+}
+
+#main-form {
+    --alignment: left;
+    --flex-alignment: flex-start;
+    --indent-left: 1;
+    --indent-right: 0;
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    background-color: transparent;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    transform: perspective(1000px) rotateY(0deg);
+    transform-origin: 50% 50%;
+    transition: opacity 0.75s ease 0s, transform 0.75s ease 0s;
+    opacity: 1.0 !important;
+    transform: none !important;
+    transition: none !important;
+    filter: none !important;
+}
+
+#main-form>.inner-form {
+    --padding-horizontal: 3rem;
+    --padding-vertical: 0rem;
+    --spacing: 0rem;
+    --width: 40rem;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    opacity: 1.0 !important;
+}
+
+#main-form>.inner-form>* {
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+#main-form>.inner-form>.full {
+    margin-left: calc(var(--padding-horizontal) * -1);
+    max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+    width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+}
+
+#main-form .container.full:first-child>.wrapper {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#main-form .container.full:last-child>.wrapper {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+#main-form .container.full:first-child>.wrapper>.inner-form {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#main-form .container.full:last-child>.wrapper>.inner-form {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 /* Contenedor general del carrusel */
@@ -1006,7 +1076,7 @@ spoiler-text.active {
     border: none;
     color: white;
     font-size: 2rem;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 50%;
     user-select: none;
@@ -1179,7 +1249,7 @@ spoiler-text.active {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 10px;
+    padding: 5px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
