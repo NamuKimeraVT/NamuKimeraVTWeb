@@ -20,6 +20,8 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="img/Foto de Perfil.png" />
     <link rel="apple-touch-icon" href="/img/Foto de Perfil.png" />
+    <script src="carrusellightbox.js"></script>
+    <script src="animaciones.js"></script>
     <script src="https://kit.fontawesome.com/ec2b590b83.js" crossorigin="anonymous"></script>
     <script async src="//www.googletagmanager.com/gtag/js?id=156482233"></script>
 </head>
@@ -43,7 +45,7 @@
 <body class="is-loading">
     <h1 id="texttitlemain1" class="text">♦ COMISIONES ♦</h1>
     <h2 id="texttitlemain2" class="text">T.O.S GENERALES</h2>
-    <ul id="texttos" class="text">
+    <ul id="textp" class="text">
         <li><strong> Tengo todos los derechos sobre su pedido. </strong></li> <br>
         <li><strong> Todos los precios indicados son precios base y pueden variar según las circunstancias. </strong></li> <br>
         <li><strong> Todo se considera comercial. Estos precios están indicados para Vtubers, streamers y otros creadores de contenido. </strong> </li> <br>
@@ -63,10 +65,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">PERSONAJES</h3>
+                <h3 id="texttitlesec1" class="text">PERSONAJES</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -95,10 +97,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">FONDOS/OBJETOS</h3>
+                <h3 id="texttitlesec1" class="text">FONDOS/OBJETOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -110,7 +112,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -130,17 +132,17 @@
         <div class="section">
             <p id="texttitlemain3" class="text">♦ DISEÑOS CONCEPTUALES ♦</p>
             <ul>
-                <h3 id="texttitlecom1" class="text">PERSONAJES</h3>
+                <h3 id="texttitlesec1" class="text">PERSONAJES</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$15, €12</strong> SIMPLE, <strong id="textprice">$30, €24</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$60, €48</strong> 5 SIMPLES, <strong id="textprice">$120, €96</strong> 10 SIMPLES, <strong id="textprice">$120, €96</strong> 5 COMPLEJOS, <strong id="textprice">$240, €192</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom1" class="text">FONDOS/OBJETOS</h3>
+                <h3 id="texttitlesec1" class="text">FONDOS/OBJETOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$20, €16</strong> SIMPLE, <strong id="textprice">$40, €32</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$80, €64</strong> 5 SIMPLES, <strong id="textprice">$160, €128</strong> 10 SIMPLES, <strong id="textprice">$160, €128</strong> 5 COMPLEJAS, <strong id="textprice">$320, €256</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-15 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art</strong> <br>
                     <strong id="textprice">+25%</strong> por cada <strong style="font-weight: 700;">Ángulo/Pose Extra</strong> <br>
@@ -148,7 +150,7 @@
                     <strong id="textprice">+50%</strong> por C/U con <strong style="font-weight: 700;">Modificaciones</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">EXPRESIONES EXTRA:</strong> <strong id="textprice">$5, €4</strong> <br>
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
@@ -157,20 +159,20 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S DISEÑOS CONCEPTUALES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S DISEÑOS CONCEPTUALES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li>Deberá declarar el tamaño o por defecto será 1920×1080 píxeles.</li> <br>
                 <li>Deberá aclarar todo (las 2 poses, las 2 expresiones, el accesorio, el nivel de detalle) o por defecto las 2 poses serán 3/4 Frontal y 3/4 Trasero, las 2 expresiones serán Triste y Feliz.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3"> PERSONAJES</h3>
+                <h3 id="texttitlesec3"> PERSONAJES</h3>
                 <li>El Modelsheet en tamaño 1920x1080px, en formato PNG/JPG, con su correspondiente archivo .kra, 2 poses, 2 expresiones y 1 accesorio.</li> <br>
-                <h3 id="texttitlecom3">FONDOS/OBJETOS</h3>
+                <h3 id="texttitlesec3">FONDOS/OBJETOS</h3>
                 <li>El Fondo/Objeto en tamaño 1920x1080px, en formato PNG/JPG, con su correspondiente archivo .kra, 2 Ángulos.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Si pide 5 Diseños Conceptuales o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Diseños Conceptuales, puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
@@ -181,10 +183,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">LOGOS</h3>
+                <h3 id="texttitlesec1" class="text">LOGOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -226,7 +228,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -258,10 +260,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">PANELES</h3>
+                <h3 id="texttitlesec1" class="text">PANELES</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -282,7 +284,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -293,10 +295,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">FUENTES DE TEXTO</h3>
+                <h3 id="texttitlesec1" class="text">FUENTES DE TEXTO</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -306,7 +308,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -318,10 +320,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">FOTOS</h3>
+                <h3 id="texttitlesec1" class="text">FOTOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -357,7 +359,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -374,10 +376,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">ILUSTRACIONES SVG</h3>
+                <h3 id="texttitlesec1" class="text">ILUSTRACIONES SVG</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -413,7 +415,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -433,10 +435,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">INSIGNIAS/ICONOS</h3>
+                <h3 id="texttitlesec1" class="text">INSIGNIAS/ICONOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -446,7 +448,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -461,39 +463,39 @@
         <div class="section">
             <p id="texttitlemain3" class="text">♦ PIEZAS GRAFICAS ♦</p>
             <ul>
-                <h3 id="texttitlecom1" class="text">LOGOS/ILUSTRACIONES VECTORIALES</h3>
+                <h3 id="texttitlesec1" class="text">LOGOS/ILUSTRACIONES VECTORIALES</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$15, €12</strong> SIMPLE, <strong id="textprice">$30, €24</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$60, €48</strong> 5 SIMPLES, <strong id="textprice">$120, €96</strong> 10 SIMPLES, <strong id="textprice">$120, €96</strong> 5 COMPLEJOS, <strong id="textprice">$240, €192</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom1" class="text">PANELES STREAMS</h3>
+                <h3 id="texttitlesec1" class="text">PANELES STREAMS</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJOS, <strong id="textprice">$160, €128</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom1" class="text">FOTOS PERFIL</h3>
+                <h3 id="texttitlesec1" class="text">FOTOS PERFIL</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">INSIGNIAS/ICONOS</h3>
+                <h3 id="texttitlesec1" class="text">INSIGNIAS/ICONOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$5, €4</strong> SIMPLE, <strong id="textprice">$10, €8</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$20, €16</strong> 5 SIMPLES, <strong id="textprice">$40, €32</strong> 10 SIMPLES, <strong id="textprice">$40, €32</strong> 5 COMPLEJAS, <strong id="textprice">$80, €64</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">FUENTES DE TEXTO</h3>
+                <h3 id="texttitlesec1" class="text">FUENTES DE TEXTO</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-15 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art</strong> <br>
                     <strong id="textprice">+40%</strong> por C/U con <strong style="font-weight: 700;">Cambio de Color</strong> <br>
                     <strong id="textprice">+50%</strong> por C/U con <strong style="font-weight: 700;">Modificaciones</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">EXPRESIONES EXTRA:</strong> <strong id="textprice">$5, €4</strong> <br>
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
@@ -505,29 +507,29 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S PIEZAS GRAFICAS</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S PIEZAS GRAFICAS</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li>Deberá decir el tamaño de su Pieza Grafica, o por defecto será 1920px X 1080px para Logos, 320px X 180px para Paneles, 1000px X 1000px para Ilustraciones Vectoriales, y/o 36px X 36px las insignias.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3"> LOGOS</h3>
+                <h3 id="texttitlesec3"> LOGOS</h3>
                 <li>Los Logos en el tamaño que me pidas en formato PNG/SVG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">ILUSTRACIONES VECTORIALES</h3>
+                <h3 id="texttitlesec3">ILUSTRACIONES VECTORIALES</h3>
                 <li>Las Ilustraciones Vectoriales en el tamaño que me pidas en formato SVG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">PANELES</h3>
+                <h3 id="texttitlesec3">PANELES</h3>
                 <li>Los Paneles en el tamaño que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3"> FOTOS DE PERFIL</h3>
+                <h3 id="texttitlesec3"> FOTOS DE PERFIL</h3>
                 <li>Las Fotos de Perfil en el tamaño que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">INSIGNIAS</h3>
+                <h3 id="texttitlesec3">INSIGNIAS</h3>
                 <li>Las Insignias en el tamaño que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">ICONOS</h3>
+                <h3 id="texttitlesec3">ICONOS</h3>
                 <li>Los Iconos en el tamaño que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">FUENTES DE TEXTO</h3>
+                <h3 id="texttitlesec3">FUENTES DE TEXTO</h3>
                 <li>Las Fuentes de Texto en el tamaño que me pidas en formato TTF/OTF con su correspondiente archivo en 600 dpi.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Si pide 5 Piezas Graficas o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Piezas Graficas, puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
@@ -538,10 +540,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">OVERLAYS ESTATICOS</h3>
+                <h3 id="texttitlesec1" class="text">OVERLAYS ESTATICOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -573,8 +575,7 @@
                                     <img src="img/PORTFOLIO/OVERLAYS/ESTATICOS/SIMPLES/OVERLAY STREAM NAMUKIMERAVT GAMEPLAY PC V1.jpg" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img
-                                        src="img/PORTFOLIO/OVERLAYS/ESTATICOS/SIMPLES/OVERLAY STREAM NAMUKIMERAVT OFFLINE V1.jpg" />
+                                    <img src="img/PORTFOLIO/OVERLAYS/ESTATICOS/SIMPLES/OVERLAY STREAM NAMUKIMERAVT OFFLINE V1.jpg" />
                                 </div>
                                 <div class="carousel-item">
                                     <img src="img/PORTFOLIO/OVERLAYS/ESTATICOS/SIMPLES/OVERLAY STREAM NAMUKIMERAVT OFFLINE V2.jpg" />
@@ -605,7 +606,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -622,10 +623,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">OVERLAYS ANIMADOS</h3>
+                <h3 id="texttitlesec1" class="text">OVERLAYS ANIMADOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -646,7 +647,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -666,17 +667,17 @@
         <div class="section">
             <h3 id="texttitlemain3" class="text">♦ OVERLAYS ♦</h3>
             <ul>
-                <h3 id="texttitlecom1" class="text">OVERLAYS ESTÁTICOS</h3>
+                <h3 id="texttitlesec1" class="text">OVERLAYS ESTÁTICOS</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">OVERLAYS ANIMADOS</h3>
+                <h3 id="texttitlesec2" class="text">OVERLAYS ANIMADOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$20, €16</strong> SIMPLE, <strong id="textprice">$40, €32</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$80, €64</strong> 5 SIMPLES, <strong id="textprice">$160, €128</strong> 10 SIMPLES, <strong id="textprice">$160, €128</strong> 5 COMPLEJAS, <strong id="textprice">$320, €256</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-15 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art</strong> <br>
                     <strong id="textprice">+10-15 USD</strong> por C/U con <strong style="font-weight: 700;">Animacion Simple</strong> <br>
@@ -685,7 +686,7 @@
                     <strong id="textprice">+50%</strong> por C/U con <strong style="font-weight: 700;">Modificaciones</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
                     <strong style="font-weight: 700;">DISEÑO CONCEPTUAL:</strong> Desde <strong id="textprice">$15, €12</strong> <br>
@@ -694,20 +695,20 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S OVERLAYS</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S OVERLAYS</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li>Tenga en cuenta la complejidad de su solicitud, mi fuerte no es la animación y es normal rechazar algunas ideas complejas.</li> <br>
                 <li>Puede utilizar un Overlay como banner de redes sociales, Intro/Outro de YouTube, cierre de sesión o pantalla de espera.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3"> OVERLAYS ESTÁTICOS</h3>
+                <h3 id="texttitlesec3"> OVERLAYS ESTÁTICOS</h3>
                 <li>Un Overlay en formato PNG/JPG, tamaño 1920x1080px, con su correspondiente archivo en 600dpi.</li> <br>
-                <h3 id="texttitlecom3">OVERLAYS ANIMADOS</h3>
+                <h3 id="texttitlesec3">OVERLAYS ANIMADOS</h3>
                 <li>Un Overlay en formato GIF/MP4, tamaño 1920x1080px, con su correspondiente archivo en 600dpi.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Si pide 5 Overlays Simples/Complejos o mas, puede pedir que 1 sea con Animación Simple o Compleja y/o sea Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Overlays Simples/Complejos, puede pedir que 2 sean con Animación Simple o Compleja y/o sean Estilo Pixel Art sin cargos extras.</li> <br>
@@ -718,10 +719,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">EMOTES ESTATICOS</h3>
+                <h3 id="texttitlesec1" class="text">EMOTES ESTATICOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -769,7 +770,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -789,10 +790,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">EMOTES ANIMADOS</h3>
+                <h3 id="texttitlesec1" class="text">EMOTES ANIMADOS</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -834,7 +835,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -854,10 +855,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">TEXTURAS EMOTELAB</h3>
+                <h3 id="texttitlesec1" class="text">TEXTURAS EMOTELAB</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -867,7 +868,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -882,29 +883,29 @@
         <div class="section">
             <h3 id="texttitlemain3" class="text">♦ EMOTES ♦</h3>
             <ul>
-                <h3 id="texttitlecom1" class="text">EMOTES ESTÁTICOS</h3>
+                <h3 id="texttitlesec1" class="text">EMOTES ESTÁTICOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$5, €4</strong> SIMPLE, <strong id="textprice">$10, €8</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$20, €16</strong> 5 SIMPLES, <strong id="textprice">$40, €32</strong> 10 SIMPLES, <strong id="textprice">$40, €32</strong> 5 COMPLEJAS, <strong id="textprice">$80, €64</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">EMOTES ANIMADOS</h3>
+                <h3 id="texttitlesec1" class="text">EMOTES ANIMADOS</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">TEXTURAS EMOTELAB</h3>
+                <h3 id="texttitlesec1" class="text">TEXTURAS EMOTELAB</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$15, €12</strong> SIMPLE, <strong id="textprice">$30, €24</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$60, €48</strong> 5 SIMPLES, <strong id="textprice">$120, €96</strong> 10 SIMPLES, <strong id="textprice">$120, €96</strong> 5 COMPLEJOS, <strong id="textprice">$240, €192</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-15 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art</strong> <br>
                     <strong id="textprice">+40%</strong> por C/U con <strong style="font-weight: 700;">Cambio de Color o Expresión</strong> <br>
                     <strong id="textprice">+50%</strong> por C/U con <strong style="font-weight: 700;">Modificaciones</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
                     <strong style="font-weight: 700;">DISEÑO CONCEPTUAL:</strong> Desde <strong id="textprice">$15, €12</strong> <br>
@@ -913,30 +914,30 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S EMOTES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S EMOTES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li>Deberá decir el tamaño de sus Emotes/Alertas/Texturas, o por defecto será 1000px X 1000px para Emotes, 500px X 500px para Alertas, y/o 2048px X 2048px las Texturas.</li> <br>
                 <li>Tenga en cuenta la complejidad de su solicitud, mi fuerte no es la animación y es normal rechazar algunas ideas complejas.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3">EMOTES ESTATICOS</h3>
+                <h3 id="texttitlesec3">EMOTES ESTATICOS</h3>
                 <li>Los Emotes en el tamaño que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">EMOTES ANIMADOS</h3>
+                <h3 id="texttitlesec3">EMOTES ANIMADOS</h3>
                 <li>Las alertas en el tamaño que me pidas en formato GIF con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">TEXTURAS</h3>
+                <h3 id="texttitlesec3">TEXTURAS</h3>
                 <li>Las Texturas que me pidas en formato PNG con su correspondiente archivo en 600 dpi.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3">EMOTES ESTATICOS</h3>
+                <h3 id="texttitlesec3">EMOTES ESTATICOS</h3>
                 <li>Si pide 5 Emotes o mas, puede pedir que 1 sea con Animación Simple o Compleja sin cargos extras.</li> <br>
                 <li>Si pide 10 Emotes, puede pedir que 2 sean con Animación Simple y/o Compleja sin cargos extras.</li> <br>
-                <h3 id="texttitlecom3">EMOTES ANIMADOS</h3>
+                <h3 id="texttitlesec3">EMOTES ANIMADOS</h3>
                 <li>Si pide 5 Alertas Simples/Complejas o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Alertas Simples/Complejas, puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
-                <h3 id="texttitlecom3">TEXTURAS</h3>
+                <h3 id="texttitlesec3">TEXTURAS</h3>
                 <li>Si pide 5 Hojas de Texturas o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Hojas de Texturas, puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
             </ul>
@@ -946,10 +947,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">MOTION GRAPHICS/VFX</h3>
+                <h3 id="texttitlesec1" class="text">MOTION GRAPHICS/VFX</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -979,7 +980,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -991,10 +992,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">ANIMACION TRADICIONAL</h3>
+                <h3 id="texttitlesec1" class="text">ANIMACION TRADICIONAL</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1004,7 +1005,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1016,10 +1017,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">ANIMACION VECTORIAL</h3>
+                <h3 id="texttitlesec1" class="text">ANIMACION VECTORIAL</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1029,7 +1030,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1044,22 +1045,22 @@
         <div class="section">
             <h3 id="texttitlemain3" class="text">♦ ANIMACIONES 2D ♦</h3>
             <ul>
-                <h3 id="texttitlecom1" class="text">MOTION GRAPICHS/VFX</h3>
+                <h3 id="texttitlesec1" class="text">MOTION GRAPICHS/VFX</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$15, €12</strong> SIMPLE, <strong id="textprice">$30, €24</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$60, €48</strong> 5 SIMPLES, <strong id="textprice">$120, €96</strong> 10 SIMPLES, <strong id="textprice">$120, €96</strong> 5 COMPLEJOS, <strong id="textprice">$240, €192</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom1" class="text">ANIMACIÓN TRADICIONAL (NO DISPONIBLE)</h3>
+                <h3 id="texttitlesec1" class="text">ANIMACIÓN TRADICIONAL (NO DISPONIBLE)</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$20, €16</strong> SIMPLE, <strong id="textprice">$40, €32</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$80, €64</strong> 5 SIMPLES, <strong id="textprice">$160, €128</strong> 10 SIMPLES, <strong id="textprice">$160, €128</strong> 5 COMPLEJAS, <strong id="textprice">$320, €256</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">ANIMACIÓN VECTORIAL (NO DISPONIBLE)</h3>
+                <h3 id="texttitlesec1" class="text">ANIMACIÓN VECTORIAL (NO DISPONIBLE)</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-20 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art (SOLO MOTION GRAPHICS/VFX y TRADICIONAL)</strong> <br>
                     <strong id="textprice">+10-30 USD</strong> por C/U con <strong style="font-weight: 700;">Objetos 3D (SOLO MOTION GRAPHICS/VFX y TRADICIONAL)</strong> <br>
@@ -1067,7 +1068,7 @@
                     <strong id="textprice">+50%</strong> por C/U con <strong style="font-weight: 700;">Modificaciones</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
                     <strong style="font-weight: 700;">DISEÑO CONCEPTUAL:</strong> Desde <strong id="textprice">$15, €12</strong> <br>
@@ -1076,23 +1077,23 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S ANIMACION 2D</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S ANIMACION 2D</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li>Tenga en cuenta la complejidad de su solicitud, mi fuerte no es la animación y es normal rechazar algunas ideas complejas.</li> <br>
                 <li>Puede utilizar una Animación como Intro/Outro de YouTube, inicio o cierre de stream o pantalla de espera.</li> <br>
             </ul>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3"> MOTION GRAPHICS/VFX</h3>
+                <h3 id="texttitlesec3"> MOTION GRAPHICS/VFX</h3>
                 <li>Los Motion Graphics/VFX en el tamaño que me pidas en formato solicitado con su correspondiente archivo en 600 dpi.</li> <br>
-                <h3 id="texttitlecom3">TRADICIONAL</h3>
+                <h3 id="texttitlesec3">TRADICIONAL</h3>
                 <li>Las Animaciones en la resolución que me pidas en formato MP4 con su correspondiente archivo.</li> <br>
-                <h3 id="texttitlecom3">VECTORIAL</h3>
+                <h3 id="texttitlesec3">VECTORIAL</h3>
                 <li>Las Animaciones en la resolución que me pidas en formato MP4 con su correspondiente archivo.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Si pide 5 de cualquiera de las animaciones disponibles (excepto Tradicional) o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 de cualquiera de las animaciones disponibles (excepto Tradicional), puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
@@ -1103,10 +1104,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">ANIMACIONES 3D</h3>
+                <h3 id="texttitlesec1" class="text">ANIMACIONES 3D</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1116,7 +1117,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1135,7 +1136,7 @@
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$30, €24</strong> SIMPLE, <strong id="textprice">$60, €48</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$120, €96</strong> 5 SIMPLES, <strong id="textprice">$240, €192</strong> 10 SIMPLES, <strong id="textprice">$240, €192</strong> 5 COMPLEJAS, <strong id="textprice">$480, €384</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+10-30 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Voxel Art</strong> <br>
                     <strong id="textprice">+40%</strong> por C/U con <strong style="font-weight: 700;">Cambio de Color o Expresión</strong> <br>
@@ -1144,7 +1145,7 @@
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Animación Compleja (SOLO EMOTES)</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
                     <strong style="font-weight: 700;">DISEÑO CONCEPTUAL:</strong> Desde <strong id="textprice">$15, €12</strong> <br>
@@ -1153,16 +1154,16 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S ANIMACION 3D</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S ANIMACION 3D</strong></h2>
             <ul id="texttos" class="text">
                 <li> Lea las condiciones generales antes de leer estas y realizar un pedido. </li> <br>
                 <li> Deberá decir el tamaño de su Pieza Grafica, o por defecto será 1920px X 1080px para Logos, 320px X 180px para Paneles, 1000px X 1000px para Ilustraciones Vectoriales, y/o 36px X 36px las insignias. </strong> </li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
                 <li> La Animación 3D que me pidas en formato MP4 con su correspondiente archivo en 600 dpi. </li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li> Si pide 5 Animaciones 3D o mas, puede pedir que 1 sea con Estilo Voxel Art sin cargos extras. </li> <br>
                 <li> Si pide 10 Animaciones 3D, puede pedir que 2 sean con Estilo Voxel Art sin cargos extras.</li> <br>
@@ -1173,10 +1174,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">MODELOS 3D</h3>
+                <h3 id="texttitlesec1" class="text">MODELOS 3D</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1186,7 +1187,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1205,7 +1206,7 @@
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$30, €24</strong> SIMPLE, <strong id="textprice">$60, €48</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$120, €96</strong> 5 SIMPLES, <strong id="textprice">$240, €192</strong> 10 SIMPLES, <strong id="textprice">$240, €192</strong> 5 COMPLEJAS, <strong id="textprice">$480, €384</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+10-45 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Voxel Art</strong> <br>
                     <strong id="textprice">+40%</strong> por C/U con <strong style="font-weight: 700;">Cambio de Color o Expresión</strong> <br>
@@ -1214,7 +1215,7 @@
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Animación Compleja (SOLO EMOTES)</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
                     <strong style="font-weight: 700;">DISEÑO CONCEPTUAL:</strong> Desde <strong id="textprice">$15, €12</strong> <br>
@@ -1223,16 +1224,16 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S MODELOS 3D</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S MODELOS 3D</strong></h2>
             <ul id="texttos" class="text">
                 <li> Lea las condiciones generales antes de leer estas y realizar un pedido.</li> <br>
                 <li> </li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
                 <li> El Modelo 3D que me pidas en formato MP4 con su correspondiente archivo en 600 dpi. </li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li> Si pide 5 Modelos 3D o mas, puede pedir que 1 sea con Estilo Voxel Art sin cargos extras. </li> <br>
                 <li> Si pide 10 Modelos 3D, puede pedir que 2 sean con Estilo Voxel Art sin cargos extras. </li> <br>
@@ -1243,10 +1244,10 @@
     <section class="container">
         <div class="section">
             <div class="section">
-                <h3 id="texttitlecom1" class="text">VTUBERS PNG</h3>
+                <h3 id="texttitlesec1" class="text">VTUBERS PNG</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1261,7 +1262,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1284,10 +1285,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">VTUBERS 2D</h3>
+                <h3 id="texttitlesec1" class="text">VTUBERS 2D</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1299,7 +1300,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1311,10 +1312,10 @@
                 </div>
             </div>
             <div class="section">
-                <h3 id="texttitlecom1" class="text">VTUBERS 3D</h3>
+                <h3 id="texttitlesec1" class="text">VTUBERS 3D</h3>
                 <div class="portfolio-columns">
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">SIMPLES</h4>
+                        <h4 id="texttitlesec2" class="text">SIMPLES</h4>
                         <div class="carousel" id="image-carousel-simple">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1324,7 +1325,7 @@
                         </div>
                     </div>
                     <div class="portfolio-column">
-                        <h4 id="texttitlecom2" class="text">COMPLEJOS</h4>
+                        <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
                         <div class="carousel" id="image-carousel-complex">
                             <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                             <div class="carousel-track">
@@ -1339,22 +1340,22 @@
         <div class="section">
             <h3 id="texttitlemain3" class="text">♦ VTUBERS ♦</h3>
             <ul>
-                <h3 id="texttitlecom1" class="text">VTUBER PNG</h3>
+                <h3 id="texttitlesec1" class="text">VTUBER PNG</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text">VTUBER 2D</h3>
+                <h3 id="texttitlesec1" class="text">VTUBER 2D</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$20, €16</strong> SIMPLE, <strong id="textprice">$40, €32</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$80, €64</strong> 5 SIMPLES, <strong id="textprice">$160, €128</strong> 10 SIMPLES, <strong id="textprice">$160, €128</strong> 5 COMPLEJAS, <strong id="textprice">$320, €256</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom1" class="text"> VTUBER 3D (NO DISPONIBLE)</h3>
+                <h3 id="texttitlesec1" class="text"> VTUBER 3D (NO DISPONIBLE)</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$100, €80</strong> SIMPLE, <strong id="textprice">$200, €160</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$400, €320</strong> 5 SIMPLES, <strong id="textprice">$800, €640</strong> 10 SIMPLES, <strong id="textprice">$800, €640</strong> 5 COMPLEJAS, <strong id="textprice">$1600, €1280</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+5-15 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art (SOLO VTUBER PNG/2D)</strong> <br>
                     <strong id="textprice">+10-30 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Voxel Art (SOLO VTUBER 3D)</strong> <br>
@@ -1365,7 +1366,7 @@
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Rigging (SOLO VTUBER 2D/3D)</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">EXPRESIONES EXTRA:</strong> <strong id="textprice">$5, €4</strong> <br>
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
@@ -1376,22 +1377,22 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S VTUBERS</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S VTUBERS</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li><br>
                 <li>Hago tanto VTubers PNG de 4 imágenes como separado por capas.</li><br>
                 <li>Tenga en cuenta la complejidad de su solicitud, mi fuerte no es la animación y es normal rechazar algunas ideas complejas.</li><br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3"> VTUBER PNG</h3>
+                <h3 id="texttitlesec3"> VTUBER PNG</h3>
                 <li>El VTuber PNG en formato PNG, tamaño pedido, con su correspondiente archivo .kra, 2 poses.</li> <br>
-                <h3 id="texttitlecom3">VTUBER 2D</h3>
+                <h3 id="texttitlesec3">VTUBER 2D</h3>
                 <li>El VTuber 2D riggeado en tamaño pedido, con su correspondiente archivo .KRA y .PSD, 2 poses.</li> <br>
-                <h3 id="texttitlecom3">VTUBER 3D</h3>
+                <h3 id="texttitlesec3">VTUBER 3D</h3>
                 <li>El VTuber 3D en formato OBJ/FBX, con su correspondiente archivo en 600 dpi, 2 poses.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
                 <li>Si pide 5 VTubers o mas, puede pedir que 1 sea con Estilo Pixel Art (SOLO VTUBER PNG/2D) o Estilo Voxel Art (SOLO VTUBER 3D) sin cargos extras.</li> <br>
                 <li>Si pide 10 VTubers, puede pedir que 2 sean con Estilo Pixel Art (SOLO VTUBER PNG/2D) o Estilo Voxel Art (SOLO VTUBER 3D) sin cargos extras.</li> <br>
@@ -1401,7 +1402,7 @@
     <br>
     <section class="container">
         <div class="section">
-            <h3 id="texttitlecom1" class="text">VIDEOS</h3>
+            <h3 id="texttitlesec1" class="text">VIDEOS</h3>
             <div class="portfolio-columns">
                 <div class="carousel" id="image-carousel-simple">
                     <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
@@ -1430,14 +1431,14 @@
                     <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                 </div>
             </div>
-            <h3 id="texttitlecom1" class="text">MINIATURAS</h3>
+            <h3 id="texttitlesec1" class="text">MINIATURAS</h3>
             <div class="section">
                 <div class="portfolio-columns">
                     <div class="portfolio-column vertical">
-                        <h4 id="texttitlecom2" class="text">VERTICALES</h4>
+                        <h4 id="texttitlesec2" class="text">VERTICALES</h4>
                         <div class="orientation-subgroups">
                             <div class="orientation-subgroup simples">
-                                <h5 id="texttitlecom3" class="text">SIMPLES</h5>
+                                <h5 id="texttitlesec3" class="text">SIMPLES</h5>
                                 <div class="carousel" id="image-carousel-vertical">
                                     <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                                     <div class="carousel-track">
@@ -1455,6 +1456,9 @@
                                         </div>
                                         <div class="carousel-item">
                                             <img src="img\PORTFOLIO\EDICION DE VIDEOS\MINIATURAS\VERTICALES\SIMPLES\MINIATURA NAMUKIMERAVT VIDEOS CORTOS CONSEJOS PARA DESARROLLAR VIDEOJUEGOS 2.jpg" />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img\PORTFOLIO\EDICION DE VIDEOS\MINIATURAS\VERTICALES\SIMPLES\MINIATURA NAMUKIMERAVT VIDEOS CORTOS CONSEJOS PARA DESARROLLAR VIDEOJUEGOS 3.jpg" />
                                         </div>
                                         <div class="carousel-item">
                                             <img src="img\PORTFOLIO\EDICION DE VIDEOS\MINIATURAS\VERTICALES\SIMPLES\MINIATURA NAMUKIMERAVT VIDEOS CORTOS TUTORIALES 1.jpg" />
@@ -1545,7 +1549,7 @@
                                 </div>
                             </div>
                             <div class="orientation-subgroup complejas">
-                                <h5 id="texttitlecom3" class="text">COMPLEJAS</h5>
+                                <h5 id="texttitlesec3" class="text">COMPLEJAS</h5>
                                 <div class="carousel">
                                     <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                                     <div class="carousel-track">
@@ -1557,10 +1561,10 @@
                         </div>
                     </div>
                     <div class="portfolio-column horizontal">
-                        <h4 id="texttitlecom2" class="text">HORIZONTALES</h4>
+                        <h4 id="texttitlesec2" class="text">HORIZONTALES</h4>
                         <div class="orientation-subgroups">
                             <div class="orientation-subgroup simples">
-                                <h5 id="texttitlecom3" class="text">SIMPLES</h5>
+                                <h5 id="texttitlesec3" class="text">SIMPLES</h5>
                                 <div class="carousel" id="image-carousel-horizontal">
                                     <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                                     <div class="carousel-track">
@@ -1743,7 +1747,7 @@
                                 </div>
                             </div>
                             <div class="orientation-subgroup complejas">
-                                <h5 id="texttitlecom3" class="text">COMPLEJAS</h5>
+                                <h5 id="texttitlesec3" class="text">COMPLEJAS</h5>
                                 <div class="carousel">
                                     <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                                     <div class="carousel-track">
@@ -1760,29 +1764,29 @@
         <div class="section">
             <h3 id="texttitlemain3" class="text">♦ EDICION DE VIDEOS ♦</h3>
             <ul>
-                <h2 id="texttitlecom1" class="text">VIDEOS</h2>
-                <h3 id="texttitlecom2" class="text">VIDEOS VERTICALES</h3>
+                <h2 id="texttitlesec1" class="text">VIDEOS</h2>
+                <h3 id="texttitlesec2" class="text">VIDEOS VERTICALES</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJOS, <strong id="textprice">$160, €128</strong> 10 COMPLEJOS.
                 </p>
-                <h3 id="texttitlecom2" class="text">VIDEOS HORIZONTALES</h3>
+                <h3 id="texttitlesec2" class="text">VIDEOS HORIZONTALES</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$20, €16</strong> SIMPLE, <strong id="textprice">$40, €32</strong> COMPLEJO. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$80, €64</strong> 5 SIMPLES, <strong id="textprice">$160, €128</strong> 10 SIMPLES, <strong id="textprice">$160, €128</strong> 5 COMPLEJOS, <strong id="textprice">$320, €256</strong> 10 COMPLEJOS.
                 </p>
-                <h2 id="texttitlecom1" class="text"> MINIATURAS</h2>
-                <h3 id="texttitlecom2" class="text"> MINIATURAS VERTICALES</h3>
+                <h2 id="texttitlesec1" class="text"> MINIATURAS</h2>
+                <h3 id="texttitlesec2" class="text"> MINIATURAS VERTICALES</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$5, €4</strong> SIMPLE, <strong id="textprice">$10, €8</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$20, €16</strong> 5 SIMPLES, <strong id="textprice">$40, €32</strong> 10 SIMPLES, <strong id="textprice">$40, €32</strong> 5 COMPLEJAS, <strong id="textprice">$80, €64</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text"> MINIATURAS HORIZONTALES</h3>
+                <h3 id="texttitlesec2" class="text"> MINIATURAS HORIZONTALES</h3>
                 <p id="textp" class="text"> 
                     <strong style="font-weight: 700;">PRECIOS:</strong> <strong id="textprice">$10, €8</strong> SIMPLE, <strong id="textprice">$20, €16</strong> COMPLEJA. <br>
                     <strong style="font-weight: 700;">PAQUETES:</strong> <strong id="textprice">$40, €32</strong> 5 SIMPLES, <strong id="textprice">$80, €64</strong> 10 SIMPLES, <strong id="textprice">$80, €64</strong> 5 COMPLEJAS, <strong id="textprice">$160, €128</strong> 10 COMPLEJAS.
                 </p>
-                <h3 id="texttitlecom2" class="text">CARGOS EXTRA</h3>
+                <h3 id="texttitlesec2" class="text">CARGOS EXTRA</h3>
                 <p id="textp" class="text">
                     <strong id="textprice">+10-20 USD</strong> por C/U con <strong style="font-weight: 700;">Estilo Pixel Art (SOLO MINIATURAS)</strong> <br>
                     <strong id="textprice">+15-30 USD</strong> por C/U con <strong style="font-weight: 700;">Objetos/Ilustraciones Pixel Art (SOLO MINIATURAS)</strong> <br>
@@ -1793,7 +1797,7 @@
                     <strong id="textprice">+60%</strong> por C/U con <strong style="font-weight: 700;">Corrección de Color (SOLO VIDEOS)</strong> <br>
                     <strong id="textprice">+100%</strong> por C/U con <strong style="font-weight: 700;">Completamente Diferente</strong> <br>
                 </p>
-                <h3 id="texttitlecom2" class="text">AÑADIDOS</h3>
+                <h3 id="texttitlesec2" class="text">AÑADIDOS</h3>
                 <p id="textp" class="text">
                     <strong style="font-weight: 700;">EXPRESIONES EXTRA:</strong> <strong id="textprice">$5, €4</strong> <br>
                     <strong style="font-weight: 700;">DETALLES ADICIONALES (ej., accesorios):</strong> Desde <strong id="textprice">$10, €8</strong> <br>
@@ -1804,24 +1808,24 @@
             </ul>
         </div>
         <div class="section">
-            <h2 id="texttitlecom2" class="text"><strong>T.O.S EDICION DE VIDEOS</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>T.O.S EDICION DE VIDEOS</strong></h2>
             <ul id="texttos" class="text">
                 <li>Lea las condiciones generales antes de leer estas y realizar un pedido.</li><br>
                 <li>Las primeras 2 revisiones por video son gratis, luego son 2 USD por cada revisión y cambio extra.</li><br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUYE</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUYE</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3">VIDEOS</h3>
+                <h3 id="texttitlesec3">VIDEOS</h3>
                 <li>Los videos editados en tamaño 1080px X 1920px para los verticales y 1920px x 1080px para los horizontales.</li> <br>
-                <h3 id="texttitlecom3">MINIATURAS</h3>
+                <h3 id="texttitlesec3">MINIATURAS</h3>
                 <li>Las miniaturas editadas en tamaño 1080px X 1920px para los verticales y 1920px x 1080px para los horizontales.</li> <br>
             </ul>
-            <h2 id="texttitlecom2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
+            <h2 id="texttitlesec2" class="text"><strong>INCLUSION PAQUETES</strong></h2>
             <ul id="texttos" class="text">
-                <h3 id="texttitlecom3">VIDEOS</h3>
+                <h3 id="texttitlesec3">VIDEOS</h3>
                 <li>Si pide 5 Videos o mas, puede pedir que 1 sea con Edicion de Audio o Correccion de Color sin cargos extras.</li> <br>
                 <li>Si pide 10 Videos, puede pedir que 2 sean con Edicion de Audio o Correccion de Color sin cargos extras.</li> <br>
-                <h3 id="texttitlecom3">MINIATURAS</h3>
+                <h3 id="texttitlesec3">MINIATURAS</h3>
                 <li>Si pide 5 Miniaturas o mas, puede pedir que 1 sea con Estilo Pixel Art sin cargos extras.</li> <br>
                 <li>Si pide 10 Miniaturas, puede pedir que 2 sean con Estilo Pixel Art sin cargos extras.</li> <br>
             </ul>
@@ -1843,7 +1847,5 @@
     <footer>
         <h1 id="textfooter" class="text"> © Copyright 2026 | NamuKimeraVT's Official WebSite | </h1>
     </footer>
-    <script src="carrusellightbox.js"></script>
-    <script src="animaciones.js"></script>
 </body>
 </html>

@@ -534,37 +534,6 @@ spoiler-text.active {
     color: #000000;
 }
 
-#texttitlecom1 {
-    font-size: 1.75rem;
-    font-weight: 900;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-#texttitlecom2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-#texttitlecom3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-#texttos {
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-align: justify;
-    color: #000000;
-}
-
 #textnav {
     font-size: 1.25rem;
     font-weight: 700;
