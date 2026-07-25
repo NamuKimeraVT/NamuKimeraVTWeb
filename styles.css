@@ -442,7 +442,6 @@ spoiler-text.active {
     max-width: 100%;
     text-decoration: none;
     vertical-align: middle;
-    text-transform: uppercase;
     white-space: nowrap;
 }
 
@@ -452,7 +451,6 @@ spoiler-text.active {
     max-width: 100%;
     text-decoration: none;
     vertical-align: middle;
-    text-transform: uppercase;
     border-radius: 2rem;
     white-space: nowrap;
 }
@@ -528,7 +526,7 @@ spoiler-text.active {
 
 #texttitlesec3 {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -536,10 +534,10 @@ spoiler-text.active {
 
 #textnav {
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 900;
     text-align: justify;
     text-transform: uppercase;
-    color: #6b6767;
+    color: #676767;
 }
 
 #textp {
