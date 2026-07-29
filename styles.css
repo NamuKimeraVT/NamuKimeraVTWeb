@@ -202,19 +202,6 @@ spoiler-text.active {
     cursor: text;
 }
 
-#wrapper {
-    -webkit-overflow-scrolling: touch;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: var(--viewport-height);
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    padding: 1rem;
-}
-
 #main {
     --alignment: left;
     --flex-alignment: flex-start;
@@ -769,11 +756,7 @@ spoiler-text.active {
 }
 
 .image-column {
-    width: 20%;
-}
-
-.content-column {
-    width: 80%;
+    width: 25%;
 }
 
 .container {
