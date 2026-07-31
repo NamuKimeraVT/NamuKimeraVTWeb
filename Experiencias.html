@@ -20,27 +20,13 @@
     <link rel="icon" type="image/png" href="img/Foto de Perfil.png" />
     <link rel="apple-touch-icon" href="img/Foto de Perfil.png" />
     <script src="animaciones.js"></script>
+    <script src="navloader.js"></script>
     <script src="https://kit.fontawesome.com/ec2b590b83.js" crossorigin="anonymous"></script>
     <script async src="//www.googletagmanager.com/gtag/js?id=156482233"></script>
 </head>
 
-<nav>
-    <ul>
-        <li><img width="70px" src="img/Foto de Perfil.png" /></li>
-        <li id="textnav" class="text"><a href="index.html" target="_blank">Inicio</a></li>
-        <li id="textnav" class="text"><a href="Comisiones.html" target="_blank">Comisiones</a></li>
-        <!-- <li id="textnav" class="text"><a href="Contacto.html" target="_blank">Contacto</a></li> -->
-        <li id="textnav" class="text"><a href="Experiencias.html" target="_blank">Experiencias</a></li>
-        <li id="textnav" class="text"><a href="F.A.Q.html" target="_blank">F.A.Q</a></li>
-        <li id="textnav" class="text"><a href="Fanarts.html" target="_blank">Fan Arts</a></li>
-        <li id="textnav" class="text"><a href="Obras.html" target="_blank">Obras</a></li>
-        <li id="textnav" class="text"><a href="Ocs.html" target="_blank">OC's</a></li>
-        <li id="textnav" class="text"><a href="Portfolio.html" target="_blank">Portfolio</a></li>
-        <li id="textnav" class="text"><a href="Sponsors.html" target="_blank">Sponsors</a></li>
-    </ul>
-</nav>
-
 <body class="is-loading">
+    <div id="nav-container"></div>
     <h1 id="texttitlemain1" class="text">♦ EXPERIENCIAS ♦</h1>
     <section class="container">
         <div class="image-column">
@@ -64,6 +50,7 @@
         <img src="img\LOGO ACTUAL.png" style="width: 60%; margin-left: 20%; margin-right: 20%;">
     </div>
     <br>
+    <!-- <h2 id="texttitlemain2" class="text">2027</h2> -->
     <!-- <h2 id="texttitlemain3" class="text">LIVE2D (RIGGING)</h2>
     <div class="container">
         <div class="section">
@@ -72,7 +59,7 @@
         <div class="section">
             <h3 id="texttitlesec1" class="text">Rigger en Live2D</h3>
             <p id="textp" class="text">
-                Desde 07/2026, me dedico al rigging en Live2D, aplicando criterios técnicos para la construcción de
+                Desde 07/2027, me dedico al rigging en Live2D, aplicando criterios técnicos para la construcción de
                 modelos con deformaciones precisas, movimientos fluidos y una correcta integración de parámetros de
                 animación. Mi enfoque está orientado a optimizar la expresividad del personaje sin comprometer la
                 estabilidad del modelo, cuidando la coherencia visual y la funcionalidad en cada proyecto.
@@ -88,7 +75,7 @@
         <div class="section">
             <h3 id="texttitlesec1" class="text">Compositor de Música en FL Studio</h3>
             <p id="textp" class="text">
-                Desde 07/2026, me dedico a la composición musical en FL Studio, perfeccionando un método de trabajo
+                Desde 07/2027, me dedico a la composición musical en FL Studio, perfeccionando un método de trabajo
                 donde la precisión es fundamental. Entiendo que la música es la columna vertebral de cualquier proyecto
                 de arte digital y, por eso, mi objetivo es siempre elevar la experiencia del espectador a través de un
                 audio de alta calidad. Al dominar las herramientas y opciones de FL Studio, logro composiciones que no
@@ -99,7 +86,27 @@
         </div>
     </div>
     <br> -->
-    <!-- <h2 id="texttitlemain3" class="text">GB STUDIO (PROGRAMACIÓN DE VIDEOJUEGOS)</h2>
+    <h2 id="texttitlemain2" class="text">2026</h2>
+    <!-- <h2 id="texttitlemain2" class="text">ADOBE SUBSTANCE 3D PAINTER/DESIGNER (TEXTURIZADO 3D)</h2>
+    <div class="container">
+        <div class="section">
+            <img src="img\EXPERIENCIAS\SUBSTANCE 3D PAINTER UI.png" style="width: 100%;">
+            <img src="img\EXPERIENCIAS\SUBSTANCE 3D DESIGNER UI.png" style="width: 100%;">
+        </div>
+        <div class="section">
+            <h3 id="texttitlesec1" class="text">Texturizado y Materiales 3D (Substance Suite)</h3>
+            <p id="textp" class="text">
+                Desde 11/2026, integro Substance 3D Painter y Designer en mi flujo de trabajo para alcanzar acabados de
+                alta gama. Utilizo Substance 3D Designer para la creación de materiales procedurales complejos y
+                precisos, sentando las bases de profundidad y realismo necesarias para mis activos 3D. Complemento este
+                proceso con Substance 3D Painter, donde aplico texturas detalladas que resaltan la geometría de cada
+                modelo. Este enfoque integral asegura que cada pieza no solo sea visualmente impactante, sino
+                técnicamente optimizada para cumplir con los estándares de calidad de NamuVT Studios.
+            </p>
+        </div>
+    </div>
+    <br> -->
+    <h2 id="texttitlemain3" class="text">GB STUDIO (PROGRAMACIÓN DE VIDEOJUEGOS)</h2>
     <div class="container">
         <div class="section">
             <img src="img\EXPERIENCIAS\GB STUDIO UI.png" style="width: 100%;">
@@ -117,36 +124,16 @@
             </p>
         </div>
     </div>
-    <br> -->
-    <!-- <h2 id="texttitlemain2" class="text">ADOBE SUBSTANCE 3D PAINTER/DESIGNER (TEXTURIZADO 3D)</h2>
-    <div class="container">
-        <div class="section">
-            <img src="img\EXPERIENCIAS\SUBSTANCE 3D PAINTER UI.png" style="width: 50%;">
-            <img src="img\EXPERIENCIAS\SUBSTANCE 3D DESIGNER UI.png" style="width: 50%;">
-        </div>
-        <div class="section">
-            <h3 id="texttitlesec1" class="text">Texturizado y Materiales 3D (Substance Suite)</h3>
-            <p id="textp" class="text">
-                Desde 11/2025, integro Substance 3D Painter y Designer en mi flujo de trabajo para alcanzar acabados de
-                alta gama. Utilizo Substance 3D Designer para la creación de materiales procedurales complejos y
-                precisos, sentando las bases de profundidad y realismo necesarias para mis activos 3D. Complemento este
-                proceso con Substance 3D Painter, donde aplico texturas detalladas que resaltan la geometría de cada
-                modelo. Este enfoque integral asegura que cada pieza no solo sea visualmente impactante, sino
-                técnicamente optimizada para cumplir con los estándares de calidad de NamuVT Studios.
-            </p>
-        </div>
-    </div>
-    <br> -->
-    <h2 id="texttitlemain2" class="text">2026</h2>
+    <br>
     <h2 id="texttitlemain3" class="text">UNITY 6 (DESARROLLO DE APLICACIONES)</h2>
     <div class="container">
         <div class="section" style="width: 100%;">
             <img src="img\EXPERIENCIAS\UNITY UI.png" style="width: 100%;">
         </div>
         <div class="section">
-            <h3 id="texttitlesec1" class="text">Desarrollador de Aplicaciones VTuber en Unity</h3>
+            <h3 id="texttitlesec1" class="text">Desarrollador de Aplicaciones en Unity</h3>
             <p id="textp" class="text">
-                Desde 03/2026, desarrollo aplicaciones VTuber utilizando Unity, bajo un método de trabajo basado en la
+                Desde 03/2026, desarrollo aplicaciones utilizando Unity, bajo un método de trabajo basado en la
                 precisión. Entiendo que un proyecto sólido es el resultado de combinar arte y código funcional, por lo
                 que mi fortaleza principal reside en mi capacidad para traducir lógicas de juego complejas en
                 instrucciones técnicas exactas. Aprovecho las herramientas de Unity para generar código limpio y
@@ -269,13 +256,13 @@
     </div>
     <br>
     <h2 id="texttitlemain2" class="text">2023</h2>
-    <!-- <h2 id="texttitlemain3" class="text">TOON BOOM HARMONY (ANIMACIÓN 2D)</h2>
+    <h2 id="texttitlemain3" class="text">TOON BOOM HARMONY (ANIMACIÓN)</h2>
     <div class="container">
         <div class="section">
             <img src="img\EXPERIENCIAS\TOON BOOM HARMONY UI.png" style="width: 100%;">
         </div>
         <div class="section">
-            <h3 id="texttitlesec1" class="text">Animador 2D en Toon Boom Harmony</h3>
+            <h3 id="texttitlesec1" class="text">Animador en Toon Boom Harmony</h3>
             <p id="textp" class="text">
                 Desde 09/2023, me dedico a la creación de animaciones de personajes y fondos detallados, enfocados tanto
                 para entretenimiento como para uso comercial. Especializado en estilo anime, mi trabajo se distingue por
@@ -287,14 +274,14 @@
             </p>
         </div>
     </div>
-    <br> -->
+    <br>
     <h2 id="texttitlemain3" class="text">KRITA (ILUSTRACIÓN)</h2>
     <div class="container">
         <div class="section">
             <img src="img\EXPERIENCIAS\KRITA UI.png" style="width: 100%;">
         </div>
         <div class="section">
-            <h3 id="texttitlesec1" class="text">Ilustrador Digital en Krita</h3>
+            <h3 id="texttitlesec1" class="text">Animador 2D e Ilustrador Digital en Krita</h3>
             <p id="textp" class="text">
                 Desde 03/2023, me especializo en ilustración digital y arte conceptual, dominando la teoría del color,
                 el volumen y la oclusión ambiental. Mi flujo de trabajo integra el diseño integral de personajes con una

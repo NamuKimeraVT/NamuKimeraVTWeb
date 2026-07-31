@@ -20,27 +20,13 @@
     <link rel="icon" type="image/png" href="img/Foto de Perfil.png" />
     <link rel="apple-touch-icon" href="img/Foto de Perfil.png" />
     <script src="animaciones.js"></script>
+    <script src="navloader.js"></script>
     <script src="https://kit.fontawesome.com/ec2b590b83.js" crossorigin="anonymous"></script>
     <script async src="//www.googletagmanager.com/gtag/js?id=156482233"></script>
 </head>
 
-<nav>
-    <ul>
-        <li><img width="70px" src="img/Foto de Perfil.png" /></li>
-        <li id="textnav" class="text"><a href="index.html" target="_blank">Inicio</a></li>
-        <li id="textnav" class="text"><a href="Comisiones.html" target="_blank">Comisiones</a></li>
-        <!-- <li id="textnav" class="text"><a href="Contacto.html" target="_blank">Contacto</a></li> -->
-        <li id="textnav" class="text"><a href="Experiencias.html" target="_blank">Experiencias</a></li>
-        <li id="textnav" class="text"><a href="F.A.Q.html" target="_blank">F.A.Q</a></li>
-        <li id="textnav" class="text"><a href="Fanarts.html" target="_blank">Fan Arts</a></li>
-        <li id="textnav" class="text"><a href="Obras.html" target="_blank">Obras</a></li>
-        <li id="textnav" class="text"><a href="Ocs.html" target="_blank">OC's</a></li>
-        <li id="textnav" class="text"><a href="Portfolio.html" target="_blank">Portfolio</a></li>
-        <li id="textnav" class="text"><a href="Sponsors.html" target="_blank">Sponsors</a></li>
-    </ul>
-</nav>
-
 <body class="is-loading">
+    <div id="nav-container"></div>
     <h1 id="texttitlemain1" class="text">♦ PREGUNTAS FRECUENTES ♦</h1>
     <section class="container">
         <div class="image-column">
@@ -75,12 +61,12 @@
         <p id="texttitlemain2" class="text"><strong>¿QUE PROGRAMAS UTILIZAS Y PARA QUE FUNCIONES?</strong></p>
         <p id="textp" class="text" style="font-size: 2em"><strong>Utilizo varios programas, tanto para mis videos como para mis otros trabajos:</strong></p>
         <ul id="textp" class="text" style="font-size: 1.5em">
-            <li><strong>AFTER EFFECTS</strong> para la Postproducción de la parte Artistica de mis Videojuegos (Cutscenes, VFX, Motion Graphics, etc.) y Videos (Cutscenes, VFX, Motion Graphics, etc.).</li> <br>
+            <li><strong>AFTER EFFECTS</strong> para la Postproducción de la parte Artistica de mis Videojuegos y Videos (Cutscenes, VFX, Motion Graphics, etc.).</li> <br>
             <li><strong>ANDROID STUDIO</strong> para exportar Videojuegos a Android.</li> <br>
-            <li><strong>ASEPRITE</strong> para hacer Pixel Art para mis Videojuegos (Spritesheets, Portadas, etc.) y hacer Ilustraciones para Miniaturas (Cosplays de mi Avatar, Ilustraciones para Miniaturas, etc.).</li> <br>
+            <li><strong>ASEPRITE</strong> para hacer Pixel Art para mis Videojuegos (Spritesheets, Portadas, etc.) y hacer Ilustraciones para Miniaturas (Cosplays de mi Avatar, Curis, etc.).</li> <br>
             <li><strong>AUDITION</strong> para grabar y editar el Audio de mis Proyectos (Videos, Trailers de Videojuegos, etc.).</li> <br>
             <!-- <li><strong>BLACKBOX</strong> para crear aplicaciones y juegos.</li> <br> -->
-            <li><strong>BLENDER</strong> para Modelado y Animación 3D (VTubers, Escenas de Videojuegos, Modelos 3D, etc.), Texturizado, UV Mapping y Rigging.</li> <br>
+            <li><strong>BLENDER</strong> para Modelado y Animación 3D (VTubers, Escenas de Videojuegos, Modelos 3D, etc.), Texturizado, UV Mapping y Rigging 3D.</li> <br>
             <li><strong>CLIP STUDIO PAINT</strong> para hacer Obras Literarias (Novelas, Mangas, Manhwas, etc.).</li> <br>
             <li><strong>EMOTELAB</strong> para hacer Emotes y Alertas.</li> <br>
             <!-- <li><strong>FL STUDIO</strong> para hacer música.</li> <br> -->
@@ -90,7 +76,7 @@
             <li><strong>GITHUB DESKTOP</strong> para el control de versiones de mis trabajos en GitHub.</li> <br>
             <li><strong>GODOT</strong> para crear Videojuegos 2D.</li> <br>
             <li><strong>ILLUSTRATOR</strong> para Ilustraciones Vectoriales, tanto de Videojuegos como de otros proyectos (Logos, Sprites, etc.).</li> <br>
-            <li><strong>KRITA</strong> para Ilustraciones 2D de videojuegos (Concept Art, Character Design, Modelos VTubers, etc.), Animación 2D (CutScenes, etc.) y hacer Ilustraciones para Miniaturas (Cosplays de mi Avatar, Ilustraciones para Miniaturas, etc.).</li> <br>
+            <li><strong>KRITA</strong> para Ilustraciones 2D de videojuegos (Concept Art, Character Design, Modelos VTubers, etc.), y hacer Ilustraciones para Miniaturas (Cosplays de mi Avatar, Curis, etc.).</li> <br>
             <!-- <li><strong>LIVE2D</strong> para Rigging de VTubers 2D.</li> <br> -->
             <li><strong>MEDIA ENCODER</strong> para exportar mis Proyectos (Videos, Trailers de Videojuegos, etc.).</li> <br>
             <li><strong>OBS STUDIO</strong> para hacer mis videos y directos, y para Grabar el Gameplay de mis Videojuegos.</li> <br>
@@ -99,22 +85,27 @@
             <!-- <li><strong>REAPER</strong> para hacer música.</li> <br> -->
             <!-- <li><strong>SUBSTANCE 3D DESIGNER</strong> para crear Texturas y Materiales 3D.</li> <br> -->
             <!-- <li><strong>SUBSTANCE 3D PAINTER</strong> para pintar Texturas y Materiales 3D.</li> <br> -->
-            <!-- <li><strong>TOON BOOM HARMONY</strong> para Animación Tradicional, Cut-Out y Rigging.</li> <br> -->
-            <li><strong>UNITY</strong> para crear videojuegos si no quiero usar Godot o crear Aplicaciones de VTubing.</li> <br>
+            <!-- <li><strong>TOON BOOM HARMONY</strong> para Animación 2D Tradicional (CutScenes, etc.) y Cut-Out (Rigging, Vectores, etc.).</li> <br> -->
+            <li><strong>UNITY</strong> para crear videojuegos si no quiero usar Godot o crear Aplicaciones.</li> <br>
             <li><strong>VEADOTUBE MINI</strong> para usar mis avatares PNG en mis videos y directos.</li> <br>
             <li><strong>VISUAL STUDIO CODE</strong> para programar mis proyectos de software y videojuegos.</li> <br>
             <li><strong>VOICE WAVE</strong> para modificar mi voz para cuando uso un OC propio en mis videos.</li> <br>
             <!-- <li><strong>VSEE FACE</strong> para mis avatares 3D.</li> <br> -->
             <!-- <li><strong>VTUBE STUDIO</strong> para mis avatares 2D.</li> <br> -->
             <!-- <li><strong>XD</strong> Diseño del flujo de los menús, pantallas de carga, inventarios y pantallas de juego (HUD), permitiendo crear prototipos interactivos antes de programarlos.</li> <br> -->
-            <li>Estoy aprendiendo a usar <strong>Blackbox</strong>, <strong>FL Studio</strong>, <strong>Free Texture Packer</strong>, <strong>GB Studio</strong>, <strong>Live2D</strong>, <strong>Reaper</strong>, <strong>Substance 3D Designer/Painter</strong>, <strong>Toon Boom Harmony</strong>, <strong>VSee Face</strong>, <strong>VTube Studio</strong>, y <strong>XD</strong>.</li> <br>
+            <li>Estoy aprendiendo a usar <strong>BLACKBOX</strong>, <strong>FL STUDIO</strong>, <strong>FREE TEXTURE PACKER</strong>, <strong>LIVE2D</strong>, <strong>REAPER</strong>, <strong>SUBSTANCE 3D DESIGNER/PAINTER</strong>, <strong>VSEE FACE</strong>, <strong>VTUBE STUDIO</strong>, y <strong>XD</strong>.</li> <br>
         </ul>
         <p id="texttitlemain2" class="text"><strong>¿QUÉ LIBRERÍAS UTILIZAS Y PARA QUÉ FUNCIONES?</strong></p>
         <p id="textp" class="text" style="font-size: 2em"><strong>Utilizo estas Librerías, pero todavía no las use mucho:</strong></p>
         <ul id="textp" class="text" style="font-size: 1.5em">
+            <!-- <li><strong>CAPACITOR</strong> para cuando quiero hacer un Juego Web, es para las físicas.</li> <br> -->
+            <!-- <li><strong>CORDOVA</strong> para cuando quiero hacer un Juego Web, es para renderizar gráficos.</li> <br> -->
+            <!-- <li><strong>ELECTRONJS</strong> para cuando quiero hacer un Juego Web, es para las físicas.</li> <br> -->
+            <!-- <li><strong>GSAP</strong> para cuando quiero hacer un Juego Web, es para renderizar gráficos.</li> <br> -->
             <li><strong>MATTER.JS</strong> para cuando quiero hacer un Juego Web, es para las físicas.</li> <br>
-            <li><strong>PIXIJS</strong> para cuando quiero hacer un Juego Web, es para renderizar gráficos.</li> <br>
-            <li>Estoy aprendiendo a usar <strong>Capacitor</strong>, <strong>Cordova</strong>, <strong>ElectronJS</strong>, <strong>Gsap</strong> y <strong>Three.JS</strong>.</li> <br>
+            <li><strong>PIXIJS</strong> para cuando quiero hacer un Juego Web 2D, es para renderizar gráficos.</li> <br>
+            <!-- <li><strong>THREE.JS</strong> para cuando quiero hacer un Juego Web 3D, es para renderizar gráficos.</li> <br> -->
+            <li>Estoy aprendiendo a usar <strong>CAPACITOR</strong>, <strong>CORDOVA</strong>, <strong>ELECTRONJS</strong>, <strong>GSAP</strong> y <strong>THREE.JS</strong>.</li> <br>
         </ul>
         <p id="texttitlemain2" class="text"><strong>¿QUÉ LENGUAJES UTILIZAS Y PARA QUÉ FUNCIONES?</strong></p>
         <p id="textp" class="text" style="font-size: 2em"><strong>Utilizo estos lenguajes en diferentes partes de mis proyectos:</strong></p>
@@ -133,7 +124,7 @@
             <li><strong>PYTHON</strong> para automatizar tareas, procesar datos y prototipos.</li> <br>
             <!-- <li><strong>RUBY</strong> para automatizar tareas, procesar datos y prototipos.</li> <br> -->
             <li><strong>SQL</strong> para consultas y manejo de bases de datos.</li> <br>
-            <li>Estoy aprendiendo a usar <strong>C</strong>, <strong>C++</strong>, <strong>Java</strong>, <strong>Lua</strong>, <strong>PHP</strong> y <strong>Ruby</strong>.</li> <br>
+            <li>Estoy aprendiendo a usar <strong>C</strong>, <strong>C++</strong>, <strong>JAVA</strong>, <strong>LUA</strong>, <strong>PHP</strong> y <strong>RUBY</strong>.</li> <br>
         </ul>
         <p id="texttitlemain2" class="text"><strong>¿QUE COMPONENTES TIENE TU PC?</strong></p>
         <p id="textp" class="text" style="font-size: 2em"><strong>Mi PC tiene los siguientes componentes:</strong></p>

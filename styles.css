@@ -976,13 +976,6 @@ spoiler-text.active {
     width: 100%;
 }
 
-/* Cada elemento de la vista previa DEBE medir el 100% del carrusel */
-.carousel-track > * {
-    flex: 0 0 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .carousel-item {
     min-width: 100%;
     user-select: none;
