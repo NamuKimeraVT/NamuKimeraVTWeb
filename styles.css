@@ -996,9 +996,9 @@ spoiler-text.active {
     z-index: 1;
     max-width: 92vw;
     max-height: 92vh;
-    padding: 20px;
+    padding: 10px;
     display: grid;
-    gap: 10px;
+    gap: 5px;
     background: rgba(0, 0, 0, 0.418);
     border-radius: 18px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
@@ -1034,7 +1034,7 @@ spoiler-text.active {
     align-items: center;
     color: #fff;
     font-size: 1em;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -1074,9 +1074,9 @@ spoiler-text.active {
 .portfolio-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
     align-items: start;
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -1084,9 +1084,9 @@ spoiler-text.active {
 .portfolio-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 3px solid rgba(255, 255, 255, 0);
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 5px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 10px;
     overflow: hidden;
@@ -1126,8 +1126,8 @@ spoiler-text.active {
     flex-direction: column;
     gap: 5px;
     padding: 5px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.15);
+    border: 5px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
@@ -1135,15 +1135,15 @@ spoiler-text.active {
 
 .orientation-subgroup h5 {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     letter-spacing: 0.02em;
     color: #444;
 }
 
 .orientation-subgroup.complejas {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.15);
 }
 
 .orientation-subgroup.simples {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.15);
 }
