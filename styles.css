@@ -557,7 +557,7 @@ spoiler-text.active {
     white-space: nowrap;
     display: inline-flex;
     width: 100vw;
-    height: 3rem;
+    height: 3.5rem;
     line-height: 3rem;
 }
 
