@@ -80,7 +80,7 @@ audio {
 }
 
 nav {
-    background-color: #ff00ff;
+    background-color: #ff0000;
     overflow: hidden;
 }
 
@@ -456,7 +456,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    color: #ff00ff;
+    color: #ff0000;
 }
 
 #texttitlemain2 {
@@ -464,7 +464,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    color: #4c00ff;
+    color: #00ff00;
 }
 
 #texttitlemain3 {
@@ -472,7 +472,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    color: #00ff00;
+    color: #0000ff;
 }
 
 #texttitlesec1 {
