@@ -84,6 +84,11 @@ nav {
     overflow: hidden;
 }
 
+#nav2 {
+    background-color: #0000ff;
+    overflow: hidden;
+}
+
 nav ul {
     list-style-type: none;
 }
