@@ -1103,19 +1103,11 @@ spoiler-text.active {
 }
 
 .portfolio-column.vertical {
-    border-color: #0000ff;
+    border-color: #ffff00;
 }
 
 .portfolio-column.horizontal {
-    border-color: #ff6d00;
-}
-
-.portfolio-column.vertical h4 {
-    border-color: #0000ff;
-}
-
-.portfolio-column.horizontal h4 {
-    color: #ff6d00;
+    border-color: #8000ff;
 }
 
 .portfolio-column .carousel {
@@ -1140,13 +1132,6 @@ spoiler-text.active {
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
-}
-
-.orientation-subgroup h5 {
-    margin: 0;
-    font-size: 1.25rem;
-    letter-spacing: 0.02em;
-    color: #444;
 }
 
 .orientation-subgroup.complejas {
