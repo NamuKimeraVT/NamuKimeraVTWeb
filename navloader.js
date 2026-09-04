@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch('nav.html')
         .then(response => {
-            if (!response.ok) {
-                throw new Error("No se pudo cargar el menú de navegación");
-            }
+            if (!response.ok) throw new Error("No se pudo cargar el menú de navegación");
             return response.text();
         })
         .then(data => {
@@ -15,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     fetch('navC.html')
         .then(response => {
-            if (!response.ok) {
-                throw new Error("No se pudo cargar el menú de navegación");
-            }
+            if (!response.ok) throw new Error("No se pudo cargar el menú de navegación");
             return response.text();
         })
         .then(data => {
@@ -29,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     fetch('navP.html')
         .then(response => {
-            if (!response.ok) {
-                throw new Error("No se pudo cargar el menú de navegación");
-            }
+            if (!response.ok) throw new Error("No se pudo cargar el menú de navegación");
             return response.text();
         })
         .then(data => {
