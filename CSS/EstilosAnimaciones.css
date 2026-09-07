@@ -1,49 +1,49 @@
-/* Estado base: todos los elementos animados arrancan ocultos/desplazados */
-.af-base {
+/* Base state: all animated photos start hidden/offset */
+.ap-base {
     opacity: 0;
     transition-property: opacity, transform;
-    transition-duration: var(--af-duracion, 800ms);
-    transition-delay: var(--af-delay, 0ms);
+    transition-duration: var(--ap-duration, 800ms);
+    transition-delay: var(--anim-delay, 0ms);
     transition-timing-function: ease-out;
     will-change: opacity, transform;
 }
 
-.af-base.visible {
+.ap-base.visible {
     opacity: 1;
     transform: none;
 }
 
-/* Variantes de animación */
-.af-fade {
-    /* solo opacidad, sin transform */
+/* Animation variants (photos) */
+.ap-fade {
+    /* opacity only, no transform */
 }
 
-.af-fade-up {
+.ap-fade-up {
     transform: translateY(40px);
 }
 
-.af-fade-down {
+.ap-fade-down {
     transform: translateY(-40px);
 }
 
-.af-zoom {
+.ap-zoom {
     transform: scale(0.85);
 }
 
-.af-slide-left {
+.ap-slide-left {
     transform: translateX(60px);
 }
 
-.af-slide-right {
+.ap-slide-right {
     transform: translateX(-60px);
 }
 
-/* ---- Animación simple (elemento completo) ---- */
+/* ---- Simple animation (whole text element) ---- */
 .at-base {
     opacity: 0;
     transition-property: opacity, transform;
-    transition-duration: var(--at-duracion, 800ms);
-    transition-delay: var(--af-delay, 0ms);
+    transition-duration: var(--at-duration, 800ms);
+    transition-delay: var(--anim-delay, 0ms);
     transition-timing-function: ease-out;
     will-change: opacity, transform;
 }
@@ -69,38 +69,38 @@
     transform: translateX(-50px);
 }
 
-/* ---- Segmentado (letras / palabras) ---- */
-.at-segmentado {
+/* ---- Segmented (letters / words) ---- */
+.at-segmented {
     display: inline-block;
 }
 
-.at-segmento {
+.at-segment {
     display: inline-block;
     opacity: 0;
     transition-property: opacity, transform;
-    transition-duration: var(--at-duracion, 500ms);
-    transition-delay: calc(var(--af-delay, 0ms) + var(--at-seg-delay, 0ms));
+    transition-duration: var(--at-duration, 500ms);
+    transition-delay: calc(var(--anim-delay, 0ms) + var(--at-segment-delay, 0ms));
     transition-timing-function: ease-out;
 }
 
-.at-segmento.visible {
+.at-segment.visible {
     opacity: 1;
     transform: none;
 }
 
-.at-segmento.at-fade-up {
+.at-segment.at-fade-up {
     transform: translateY(20px);
 }
 
-.at-segmento.at-fade-down {
+.at-segment.at-fade-down {
     transform: translateY(-20px);
 }
 
-.at-segmento.at-slide-left {
+.at-segment.at-slide-left {
     transform: translateX(20px);
 }
 
-.at-segmento.at-slide-right {
+.at-segment.at-slide-right {
     transform: translateX(-20px);
 }
 
@@ -109,10 +109,10 @@
     display: inline-block;
     white-space: pre-wrap;
     border-right: 2px solid currentColor;
-    animation: at-parpadeo 0.8s step-end infinite;
+    animation: at-blink 0.8s step-end infinite;
 }
 
-@keyframes at-parpadeo {
+@keyframes at-blink {
     0%, 100% { border-color: transparent; }
     50% { border-color: currentColor; }
 }

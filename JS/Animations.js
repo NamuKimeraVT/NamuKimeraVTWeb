@@ -1,17 +1,18 @@
 class Animations {
     constructor(parameters = {}) {
-        this.selector = parameters.selector || '.elemento-animado';
-        this.type = parameters.type || 'foto';
+        this.selector = parameters.selector || '.animated-element';
+        this.type = parameters.type || 'photo';
         this.animation = parameters.animation || 'fade-up';
-        this.split = parameters.split || 'ninguno';
+        this.split = parameters.split || 'none';
         this.duration = parameters.duration ?? 800;
         this.delayBetweenItems = parameters.delayBetweenItems ?? 100;
         this.delayBetweenSegments = parameters.delayBetweenSegments ?? 30;
-        this.velocityTypewriter = parameters.velocityTypewriter ?? 40;
+        this.typewriterSpeed = parameters.typewriterSpeed ?? 40;
         this.threshold = parameters.threshold ?? 0.2;
         this.rootMargin = parameters.rootMargin || '0px 0px -50px 0px';
         this.once = parameters.once !== undefined ? parameters.once : true;
-        this.claseVisible = parameters.claseVisible || 'visible';
+        this.visibleClass = parameters.visibleClass || 'visible';
+        this.onLoad = parameters.onLoad === true;
         this.elements = [];
         this.observer = null;
         this._timeouts = [];
@@ -24,64 +25,81 @@ class Animations {
 
         this._prepareElements();
         this._createObserver();
+        this._activateImmediately();
     }
 
-    _requiresSegmentation() {
-        return this.type === 'texto' && (this.animation === 'letras' || this.animation === 'palabras' || this.split === 'letras' || this.split === 'palabras');
+    _activateImmediately() {
+        this.elements.forEach((el) => {
+            if (el.dataset.onLoad === 'true' || this.onLoad) {
+                this._activate(el);
+                if (this.once && this.observer) {
+                    this.observer.unobserve(el);
+                }
+            }
+        });
     }
 
-    _segmentType() {
-        if (this.animation === 'letras' || this.split === 'letras') return 'letras';
-        if (this.animation === 'palabras' || this.split === 'palabras') return 'palabras';
+    _getAnimation(el) {
+        return el.dataset.animation || this.animation;
+    }
+
+    _requiresSegmentation(animation) {
+        return this.type === 'text' && (animation === 'letters' || animation === 'words' || this.split === 'letters' || this.split === 'words');
+    }
+
+    _segmentType(animation) {
+        if (animation === 'letters' || this.split === 'letters') return 'letters';
+        if (animation === 'words' || this.split === 'words') return 'words';
         return null;
     }
 
     _prepareElements() {
         this.elements.forEach((el, index) => {
-            el.style.setProperty('--af-delay', `${index * this.delayBetweenItems}ms`);
+            const animation = this._getAnimation(el);
+            el.style.setProperty('--anim-delay', `${index * this.delayBetweenItems}ms`);
 
-            if (this.type === 'texto' && this.animation === 'typewriter') {
+            if (this.type === 'text' && animation === 'typewriter') {
                 this._prepareTypewriter(el);
                 return;
             }
 
-            if (this._requiresSegmentation()) {
-                this._prepareSegments(el);
+            if (this._requiresSegmentation(animation)) {
+                this._prepareSegments(el, animation);
                 return;
             }
 
-            const prefijo = this.type === 'texto' ? 'at' : 'af';
-            el.classList.add(`${prefijo}-base`, `${prefijo}-${this.animation}`);
-            el.style.setProperty(`--${prefijo}-duracion`, `${this.duration}ms`);
+            const prefix = this.type === 'text' ? 'at' : 'ap';
+            el.classList.add(`${prefix}-base`, `${prefix}-${animation}`);
+            el.style.setProperty(`--${prefix}-duration`, `${this.duration}ms`);
         });
     }
 
     _prepareTypewriter(el) {
-        const textoOriginal = el.textContent;
-        el.dataset.textoOriginal = textoOriginal;
+        const originalText = el.textContent;
+        el.dataset.originalText = originalText;
         el.textContent = '';
         el.classList.add('at-typewriter');
     }
 
-    _prepareSegments(el) {
-        const type = this._segmentType();
-        const textoOriginal = el.textContent;
-        el.dataset.textoOriginal = textoOriginal;
-        el.classList.add('at-segmentado');
+    _prepareSegments(el, animation) {
+        const type = this._segmentType(animation);
+        const originalText = el.textContent;
+        el.dataset.originalText = originalText;
+        el.classList.add('at-segmented');
 
-        const partes = type === 'letras'
-            ? Array.from(textoOriginal)
-            : textoOriginal.split(/(\s+)/);
+        const parts = type === 'letters'
+            ? Array.from(originalText)
+            : originalText.split(/(\s+)/);
 
         el.innerHTML = '';
-        partes.forEach((parte, i) => {
+        parts.forEach((part, i) => {
             const span = document.createElement('span');
-            span.className = `at-segmento at-${this.animation === 'letras' || this.animation === 'palabras' ? 'fade-up' : this.animation}`;
-            span.style.setProperty('--at-duracion', `${this.duration}ms`);
-            span.style.setProperty('--at-seg-delay', `${i * this.delayBetweenSegments}ms`);
-            span.textContent = parte === ' ' ? '\u00A0' : parte;
-            if (type === 'palabras' && parte.trim() === '') {
-                span.style.setProperty('--at-seg-delay', `0ms`);
+            span.className = `at-segment at-${animation === 'letters' || animation === 'words' ? 'fade-up' : animation}`;
+            span.style.setProperty('--at-duration', `${this.duration}ms`);
+            span.style.setProperty('--at-segment-delay', `${i * this.delayBetweenSegments}ms`);
+            span.textContent = part === ' ' ? '\u00A0' : part;
+            if (type === 'words' && part.trim() === '') {
+                span.style.setProperty('--at-segment-delay', `0ms`);
             }
             el.appendChild(span);
         });
@@ -114,48 +132,52 @@ class Animations {
     }
 
     _activate(el) {
-        if (this.type === 'texto' && this.animation === 'typewriter') {
-            this._ejecutarTypewriter(el);
+        const animation = this._getAnimation(el);
+
+        if (this.type === 'text' && animation === 'typewriter') {
+            this._runTypewriter(el);
             return;
         }
 
-        if (this._requiresSegmentation()) {
-            el.querySelectorAll('.at-segmento').forEach((span) => span.classList.add(this.claseVisible));
+        if (this._requiresSegmentation(animation)) {
+            el.querySelectorAll('.at-segment').forEach((span) => span.classList.add(this.visibleClass));
             return;
         }
 
-        el.classList.add(this.claseVisible);
+        el.classList.add(this.visibleClass);
     }
 
     _deactivate(el) {
-        if (this.type === 'texto' && this.animation === 'typewriter') {
+        const animation = this._getAnimation(el);
+
+        if (this.type === 'text' && animation === 'typewriter') {
             el.textContent = '';
             return;
         }
-        if (this._requiresSegmentation()) {
-            el.querySelectorAll('.at-segmento').forEach((span) => span.classList.remove(this.claseVisible));
+        if (this._requiresSegmentation(animation)) {
+            el.querySelectorAll('.at-segment').forEach((span) => span.classList.remove(this.visibleClass));
             return;
         }
-        el.classList.remove(this.claseVisible);
+        el.classList.remove(this.visibleClass);
     }
 
-    _ejecutarTypewriter(el) {
-        const textoOriginal = el.dataset.textoOriginal || '';
+    _runTypewriter(el) {
+        const originalText = el.dataset.originalText || '';
         el.textContent = '';
         let i = 0;
 
         const writeNext = () => {
-            if (i >= textoOriginal.length) return;
-            el.textContent += textoOriginal[i];
+            if (i >= originalText.length) return;
+            el.textContent += originalText[i];
             i += 1;
-            const t = setTimeout(writeNext, this.velocityTypewriter);
+            const t = setTimeout(writeNext, this.typewriterSpeed);
             this._timeouts.push(t);
         };
 
         writeNext();
     }
 
-    refrescar() {
+    refresh() {
         this.destroy();
         this._init();
     }
@@ -171,24 +193,26 @@ class Animations {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    window.__animationsFotos = new Animations({
-        selector: '.foto-animada',
-        type: 'foto',
+window.addEventListener('load', () => {
+    window.__animationsPhotos = new Animations({
+        selector: '.animated-photo',
+        type: 'photo',
         animation: 'fade-up',
         duration: 800,
         delayBetweenItems: 100,
         threshold: 0.2,
         once: true,
+        onLoad: true,
     });
 
-    window.__animationsTextos = new Animations({
-        selector: '.texto-animado',
-        type: 'texto',
+    window.__animationsTexts = new Animations({
+        selector: '.animated-text',
+        type: 'text',
         animation: 'fade-up',
         duration: 800,
         delayBetweenItems: 100,
         threshold: 0.2,
         once: true,
+        onLoad: true,
     });
 });
