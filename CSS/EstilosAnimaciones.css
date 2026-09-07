@@ -15,7 +15,7 @@
 
 /* Animation variants (photos) */
 .ap-fade {
-    /* opacity only, no transform */
+    opacity: 100%;
 }
 
 .ap-fade-up {
