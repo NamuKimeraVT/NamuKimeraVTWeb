@@ -1,0 +1,118 @@
+/* Estado base: todos los elementos animados arrancan ocultos/desplazados */
+.af-base {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: var(--af-duracion, 800ms);
+    transition-delay: var(--af-delay, 0ms);
+    transition-timing-function: ease-out;
+    will-change: opacity, transform;
+}
+
+.af-base.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Variantes de animación */
+.af-fade {
+    /* solo opacidad, sin transform */
+}
+
+.af-fade-up {
+    transform: translateY(40px);
+}
+
+.af-fade-down {
+    transform: translateY(-40px);
+}
+
+.af-zoom {
+    transform: scale(0.85);
+}
+
+.af-slide-left {
+    transform: translateX(60px);
+}
+
+.af-slide-right {
+    transform: translateX(-60px);
+}
+
+/* ---- Animación simple (elemento completo) ---- */
+.at-base {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: var(--at-duracion, 800ms);
+    transition-delay: var(--af-delay, 0ms);
+    transition-timing-function: ease-out;
+    will-change: opacity, transform;
+}
+
+.at-base.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.at-fade-up {
+    transform: translateY(30px);
+}
+
+.at-fade-down {
+    transform: translateY(-30px);
+}
+
+.at-slide-left {
+    transform: translateX(50px);
+}
+
+.at-slide-right {
+    transform: translateX(-50px);
+}
+
+/* ---- Segmentado (letras / palabras) ---- */
+.at-segmentado {
+    display: inline-block;
+}
+
+.at-segmento {
+    display: inline-block;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: var(--at-duracion, 500ms);
+    transition-delay: calc(var(--af-delay, 0ms) + var(--at-seg-delay, 0ms));
+    transition-timing-function: ease-out;
+}
+
+.at-segmento.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.at-segmento.at-fade-up {
+    transform: translateY(20px);
+}
+
+.at-segmento.at-fade-down {
+    transform: translateY(-20px);
+}
+
+.at-segmento.at-slide-left {
+    transform: translateX(20px);
+}
+
+.at-segmento.at-slide-right {
+    transform: translateX(-20px);
+}
+
+/* ---- Typewriter ---- */
+.at-typewriter {
+    display: inline-block;
+    white-space: pre-wrap;
+    border-right: 2px solid currentColor;
+    animation: at-parpadeo 0.8s step-end infinite;
+}
+
+@keyframes at-parpadeo {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: currentColor; }
+}
