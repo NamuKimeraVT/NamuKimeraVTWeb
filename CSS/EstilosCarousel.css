@@ -220,11 +220,11 @@
 }
 
 .portfolio-column.vertical {
-    border-color: #ffff00;
+    border-color: #ff0000;
 }
 
 .portfolio-column.horizontal {
-    border-color: #8000ff;
+    border-color: #00ff00;
 }
 
 .portfolio-column .carousel {
