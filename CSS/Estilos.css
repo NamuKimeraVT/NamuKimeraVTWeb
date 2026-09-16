@@ -481,7 +481,7 @@ spoiler-text.active {
 }
 
 #texttitlesec1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -489,7 +489,7 @@ spoiler-text.active {
 }
 
 #texttitlesec2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -497,7 +497,7 @@ spoiler-text.active {
 }
 
 #texttitlesec3 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
