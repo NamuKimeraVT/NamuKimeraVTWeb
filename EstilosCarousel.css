@@ -253,12 +253,28 @@
     max-width: 100%;
 }
 
-.portfolio-column.vertical {
+.portfolio-column.uno {
     border-color: #ff0000;
 }
 
-.portfolio-column.horizontal {
+.portfolio-column.dos {
+    border-color: #ffff00;
+}
+
+.portfolio-column.tres {
+    border-color: #0000ff;
+}
+
+.portfolio-column.cuatro {
     border-color: #00ff00;
+}
+
+.portfolio-column.cinco {
+    border-color: #9900ff;
+}
+
+.portfolio-column.seis {
+    border-color: #ff9900;
 }
 
 .portfolio-column.carousel {
