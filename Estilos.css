@@ -469,7 +469,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    color: #00ff00;
+    color: #ffff00;
 }
 
 #texttitlemain3 {
@@ -477,7 +477,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    color: #00ff00;
+    color: #0000ff;
 }
 
 #texttitlesec1 {
@@ -485,7 +485,7 @@ spoiler-text.active {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: #00ff00;
 }
 
 #texttitlesec2 {
@@ -493,7 +493,7 @@ spoiler-text.active {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: #9900ff;
 }
 
 #texttitlesec3 {
@@ -501,7 +501,7 @@ spoiler-text.active {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: #ff9900;
 }
 
 #textnav {
@@ -509,7 +509,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: justify;
     text-transform: uppercase;
-    color: #676767;
+    color: #000000;
 }
 
 #textnav2 {
@@ -517,7 +517,7 @@ spoiler-text.active {
     font-weight: 900;
     text-align: justify;
     text-transform: uppercase;
-    color: #676767;
+    color: #000000;
 }
 
 #textp {

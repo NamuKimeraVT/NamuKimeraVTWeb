@@ -6,14 +6,14 @@
     <meta charset="utf-8" />
     <meta name="color-scheme" content="light only" />
     <meta property="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" type="text/css" href="CSS/Estilos.css">
-    <link rel="stylesheet" type="text/css" href="CSS/EstilosAnimaciones.css">
-    <link rel="stylesheet" type="text/css" href="CSS/EstilosCarousel.css">
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <link rel="stylesheet" type="text/css" href="EstilosAnimaciones.css">
+    <link rel="stylesheet" type="text/css" href="EstilosCarousel.css">
     <link rel="icon" type="image/png" href="img/Foto de Perfil.png" />
     <link rel="apple-touch-icon" href="img/Foto de Perfil.png" />
-    <script src="JS/Animations.js"></script>
-    <script src="JS/Footer&Navloader.js"></script>
-    <script src="JS/CarouselLightbox.js"></script>
+    <script src="Animations.js"></script>
+    <script src="Footer&Navloader.js"></script>
+    <script src="CarouselLightbox.js"></script>
 </head>
 
 <body class="is-loading">
@@ -78,7 +78,7 @@
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
-
+                                
                             </div>
                         </div>
                         <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
@@ -266,11 +266,11 @@
             <div class="portfolio-columns">
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carou>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
-
+                                
                             </div>
                         </div>
                         <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
@@ -278,7 +278,7 @@
                 </div>
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carou>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
@@ -362,11 +362,11 @@
             <div class="portfolio-columns">
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carouse>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
-
+                                
                             </div>
                         </div>
                         <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
@@ -374,7 +374,7 @@
                 </div>
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carouse>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
@@ -410,11 +410,11 @@
             <div class="portfolio-columns">
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carouse>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
-
+                                
                             </div>
                         </div>
                         <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
@@ -422,7 +422,7 @@
                 </div>
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carouse>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
@@ -550,60 +550,74 @@
     </section>
     <section class="container">
         <div class="section">
-            <h4 id="texttitlesec1" class="text">PERSONAJES</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+            <section class="portfolio-columns">
+                <div class="portfolio-column uno">
+                    <h2 id="texttitlesec1" class="text">PERSONAJES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec2" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec2" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-            </div>
-            <h4 id="texttitlesec1" class="text">FONDOS</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                <div class="portfolio-column cuatro">
+                    <h2 id="texttitlesec1" class="text">FONDOS</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec2" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec2" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="section">
             <ul>
@@ -744,60 +758,74 @@
     </section>
     <section class="container">
         <div class="section">
-            <h4 id="texttitlesec1" class="text">VERTICALES</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
+            <section class="portfolio-columns">
+                <div class="portfolio-column uno">
+                    <h2 id="texttitlesec1" class="text">VERTICALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec2" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
 
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec2" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-            </div>
-            <h4 id="texttitlesec1" class="text">HORIZONTALES</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                <div class="portfolio-column cuatro">
+                    <h2 id="texttitlesec1" class="text">HORIZONTALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec2" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec2" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="section">
             <ul>
@@ -843,7 +871,7 @@
     <section class="container">
         <div class="section">
             <section class="portfolio-columns">
-                <div class="portfolio-column vertical">
+                <div class="portfolio-column uno">
                     <h2 id="texttitlesec1" class="text">VERTICALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -876,7 +904,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-column horizontal">
+                <div class="portfolio-column cuatro">
                     <h2 id="texttitlesec1" class="text">HORIZONTALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -956,7 +984,7 @@
     <section class="container">
         <div class="section">
             <section class="portfolio-columns">
-                <div class="portfolio-column vertical">
+                <div class="portfolio-column uno">
                     <h2 id="texttitlesec1" class="text">VERTICALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -966,7 +994,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-
+                                        
                                     </div>
                                 </div>
 
@@ -989,7 +1017,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-column horizontal">
+                <div class="portfolio-column cuatro">
                     <h2 id="texttitlesec1" class="text">HORIZONTALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -999,7 +1027,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-                                        
+
                                     </div>
                                 </div>
 
@@ -1013,7 +1041,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-                                        
+
                                     </div>
                                 </div>
 
@@ -1071,7 +1099,7 @@
     <section class="container">
         <div class="section">
             <section class="portfolio-columns">
-                <div class="portfolio-column vertical">
+                <div class="portfolio-column uno">
                     <h2 id="texttitlesec1" class="text">VERTICALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -1081,7 +1109,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-
+                                        
                                     </div>
                                 </div>
 
@@ -1104,7 +1132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-column horizontal">
+                <div class="portfolio-column cuatro">
                     <h2 id="texttitlesec1" class="text">HORIZONTALES</h2>
                     <div class="orientation-subgroups">
                         <div class="orientation-subgroup simples">
@@ -1114,7 +1142,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-                                        
+
                                     </div>
                                 </div>
 
@@ -1128,7 +1156,7 @@
 
                                 <div class="carousel-track">
                                     <div class="carousel-item">
-                                        
+
                                     </div>
                                 </div>
 
@@ -1181,116 +1209,144 @@
     </section>
     <section class="container">
         <div class="section">
-            <h4 id="texttitlesec1" class="text">HORIZONTALES</h4>
-            <h4 id="texttitlesec2" class="text">PERSONAJES</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
-                            </div>
-                        </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
+            <h4 id="texttitlesec1" class="text">PERSONAJES</h4>
+            <section class="portfolio-columns">
+                <div class="portfolio-column uno">
+                    <h2 id="texttitlesec2" class="text">VERTICALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec3" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
 
-                            </div>
-                        </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-            <h4 id="texttitlesec2" class="text">FONDOS</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
-                            </div>
-                        </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        
+                                    </div>
+                                </div>
 
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-            <h4 id="texttitlesec1" class="text">VERTICALES</h4>
-            <h4 id="texttitlesec2" class="text">PERSONAJES</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec3" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                <div class="portfolio-column cuatro">
+                    <h2 id="texttitlesec2" class="text">HORIZONTALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec3" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-            <h4 id="texttitlesec2" class="text">FONDOS</h4>
-            <div class="portfolio-columns">
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">SIMPLES</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec3" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
                     </div>
                 </div>
-                <div class="portfolio-column">
-                    <h4 id="texttitlesec3" class="text">COMPLEJOS</h4>
-                    <div class="carousel">
-                        <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
-                        <div class="carousel-track">
-                            <div class="carousel-item">
-                                
+            </section>
+            <h4 id="texttitlesec1" class="text">FONDOS</h4>
+            <section class="portfolio-columns">
+                <div class="portfolio-column uno">
+                    <h2 id="texttitlesec2" class="text">VERTICALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec3" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
                             </div>
                         </div>
-                        <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec3" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="portfolio-column cuatro">
+                    <h2 id="texttitlesec2" class="text">HORIZONTALES</h2>
+                    <div class="orientation-subgroups">
+                        <div class="orientation-subgroup simples">
+                            <h3 id="texttitlesec3" class="text">SIMPLES</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
+                            </div>
+                        </div>
+                        <div class="orientation-subgroup complejas">
+                            <h3 id="texttitlesec3" class="text">COMPLEJAS</h3>
+                            <div class="carousel" data-carousel>
+                                <button class="carousel-button prev" type="button">‹</button>
+
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+
+                                    </div>
+                                </div>
+
+                                <button class="carousel-button next" type="button">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="section">
             <ul>
@@ -1412,7 +1468,7 @@
             <div class="portfolio-columns">
                 <div class="portfolio-column">
                     <h4 id="texttitlesec2" class="text">SIMPLES</h4>
-                    <div class="carouse>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
@@ -1423,12 +1479,12 @@
                     </div>
                 </div>
                 <div class="portfolio-column">
-                    <h4 id="texttitlesec2" class="text">COMPLEJAS</h4>
-                    <div class="carouse>
+                    <h4 id="texttitlesec2" class="text">COMPLEJOS</h4>
+                    <div class="carousel">
                         <button class="carousel-button prev" aria-label="Imagen anterior">&#10094;</button>
                         <div class="carousel-track">
                             <div class="carousel-item">
-                                
+
                             </div>
                         </div>
                         <button class="carousel-button next" aria-label="Imagen siguiente">&#10095;</button>
