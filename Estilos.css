@@ -465,7 +465,7 @@ spoiler-text.active {
 }
 
 #texttitlemain2 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -473,32 +473,32 @@ spoiler-text.active {
 }
 
 #texttitlemain3 {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #0000ff;
 }
 
-#texttitlesec1 {
+#texttitlemain4 {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #00ff00;
 }
 
-#texttitlesec2 {
-    font-size: 32px;
-    font-weight: 700;
+#texttitlemain5 {
+    font-size: 28px;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #9900ff;
 }
 
-#texttitlesec3 {
-    font-size: 28px;
-    font-weight: 700;
+#texttitlemain6 {
+    font-size: 24px;
+    font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     color: #ff9900;
