@@ -1,6 +1,7 @@
 /* =========================================================
    CARRUSEL
-   ========================================================= */
+   =========================================================
+*/
 
 .carousel-container {
     margin: 0 auto 50px auto;
@@ -28,6 +29,18 @@
     user-select: none;
     text-align: center;
     aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.carousel-item-vertical {
+    min-width: 100%;
+    user-select: none;
+    text-align: center;
+    aspect-ratio: 9 / 16;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +76,28 @@
 }
 
 .carousel-item audio {
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.carousel-item-vertical a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item-vertical img,
+.carousel-item-vertical video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    outline: none;
+}
+
+.carousel-item-vertical audio {
     width: 90%;
     margin-top: 10px;
     border-radius: 5px;
@@ -122,7 +157,8 @@
 
 /* =========================================================
    LIGHTBOX
-   ========================================================= */
+   =========================================================
+*/
 
 .lightbox-overlay {
     position: fixed;
@@ -229,7 +265,8 @@
 
 /* =========================================================
    LAYOUTS DE PORTFOLIO (grillas de carruseles)
-   ========================================================= */
+   =========================================================
+*/
 
 .portfolio-columns {
     display: grid;
