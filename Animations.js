@@ -28,23 +28,40 @@ class Animations {
         this._activateImmediately();
     }
 
+    // ---------- Activation on load ----------
+
     _activateImmediately() {
-        this.elements.forEach((el) => {
-            if (el.dataset.onLoad === 'true' || this.onLoad) {
-                this._activate(el);
-                if (this.once && this.observer) {
-                    this.observer.unobserve(el);
-                }
-            }
-        });
+        this.elements.forEach((el) => this._maybeActivateOnLoad(el));
     }
+
+    _maybeActivateOnLoad(el) {
+        if (!this._shouldActivateOnLoad(el)) return;
+        this._activate(el);
+        this._stopObservingIfOnce(el);
+    }
+
+    _shouldActivateOnLoad(el) {
+        return el.dataset.onLoad === 'true' || this.onLoad;
+    }
+
+    _stopObservingIfOnce(el) {
+        if (!this.once || !this.observer) return;
+        this.observer.unobserve(el);
+    }
+
+    // ---------- Animation / segmentation helpers ----------
 
     _getAnimation(el) {
         return el.dataset.animation || this.animation;
     }
 
+    _isTypewriter(animation) {
+        return this.type === 'text' && animation === 'typewriter';
+    }
+
     _requiresSegmentation(animation) {
-        return this.type === 'text' && (animation === 'letters' || animation === 'words' || this.split === 'letters' || this.split === 'words');
+        if (this.type !== 'text') return false;
+        return this._segmentType(animation) !== null;
     }
 
     _segmentType(animation) {
@@ -53,25 +70,41 @@ class Animations {
         return null;
     }
 
+    _getPrefix() {
+        return this.type === 'text' ? 'at' : 'ap';
+    }
+
+    // ---------- Preparation (runs once per element) ----------
+
     _prepareElements() {
-        this.elements.forEach((el, index) => {
-            const animation = this._getAnimation(el);
-            el.style.setProperty('--anim-delay', `${index * this.delayBetweenItems}ms`);
+        this.elements.forEach((el, index) => this._prepareElement(el, index));
+    }
 
-            if (this.type === 'text' && animation === 'typewriter') {
-                this._prepareTypewriter(el);
-                return;
-            }
+    _prepareElement(el, index) {
+        const animation = this._getAnimation(el);
+        this._applyStaggerDelay(el, index);
 
-            if (this._requiresSegmentation(animation)) {
-                this._prepareSegments(el, animation);
-                return;
-            }
+        if (this._isTypewriter(animation)) {
+            this._prepareTypewriter(el);
+            return;
+        }
 
-            const prefix = this.type === 'text' ? 'at' : 'ap';
-            el.classList.add(`${prefix}-base`, `${prefix}-${animation}`);
-            el.style.setProperty(`--${prefix}-duration`, `${this.duration}ms`);
-        });
+        if (this._requiresSegmentation(animation)) {
+            this._prepareSegments(el, animation);
+            return;
+        }
+
+        this._prepareSimpleAnimation(el, animation);
+    }
+
+    _applyStaggerDelay(el, index) {
+        el.style.setProperty('--anim-delay', `${index * this.delayBetweenItems}ms`);
+    }
+
+    _prepareSimpleAnimation(el, animation) {
+        const prefix = this._getPrefix();
+        el.classList.add(`${prefix}-base`, `${prefix}-${animation}`);
+        el.style.setProperty(`--${prefix}-duration`, `${this.duration}ms`);
     }
 
     _prepareTypewriter(el) {
@@ -83,27 +116,50 @@ class Animations {
 
     _prepareSegments(el, animation) {
         const type = this._segmentType(animation);
-        const originalText = el.textContent;
-        el.dataset.originalText = originalText;
+        const originalText = this._storeOriginalText(el);
         el.classList.add('at-segmented');
 
-        const parts = type === 'letters'
-            ? Array.from(originalText)
-            : originalText.split(/(\s+)/);
-
+        const parts = this._splitText(originalText, type);
         el.innerHTML = '';
-        parts.forEach((part, i) => {
-            const span = document.createElement('span');
-            span.className = `at-segment at-${animation === 'letters' || animation === 'words' ? 'fade-up' : animation}`;
-            span.style.setProperty('--at-duration', `${this.duration}ms`);
-            span.style.setProperty('--at-segment-delay', `${i * this.delayBetweenSegments}ms`);
-            span.textContent = part === ' ' ? '\u00A0' : part;
-            if (type === 'words' && part.trim() === '') {
-                span.style.setProperty('--at-segment-delay', `0ms`);
-            }
-            el.appendChild(span);
-        });
+        parts.forEach((part, index) => this._appendSegment(el, part, index, animation, type));
     }
+
+    _storeOriginalText(el) {
+        const originalText = el.textContent;
+        el.dataset.originalText = originalText;
+        return originalText;
+    }
+
+    _splitText(text, type) {
+        if (type === 'letters') return Array.from(text);
+        return text.split(/(\s+)/);
+    }
+
+    _appendSegment(el, part, index, animation, type) {
+        const span = this._buildSegmentSpan(part, index, animation, type);
+        el.appendChild(span);
+    }
+
+    _buildSegmentSpan(part, index, animation, type) {
+        const span = document.createElement('span');
+        span.className = this._segmentClassName(animation);
+        span.style.setProperty('--at-duration', `${this.duration}ms`);
+        span.style.setProperty('--at-segment-delay', this._segmentDelay(part, index, type));
+        span.textContent = part === ' ' ? '\u00A0' : part;
+        return span;
+    }
+
+    _segmentClassName(animation) {
+        const effective = (animation === 'letters' || animation === 'words') ? 'fade-up' : animation;
+        return `at-segment at-${effective}`;
+    }
+
+    _segmentDelay(part, index, type) {
+        if (type === 'words' && part.trim() === '') return '0ms';
+        return `${index * this.delayBetweenSegments}ms`;
+    }
+
+    // ---------- Intersection Observer ----------
 
     _createObserver() {
         this.observer = new IntersectionObserver(
@@ -118,64 +174,99 @@ class Animations {
     }
 
     _onIntersect(entries) {
-        entries.forEach((entry) => {
-            const el = entry.target;
-            if (entry.isIntersecting) {
-                this._activate(el);
-                if (this.once) {
-                    this.observer.unobserve(el);
-                }
-            } else if (!this.once) {
-                this._deactivate(el);
-            }
-        });
+        entries.forEach((entry) => this._handleIntersection(entry));
     }
+
+    _handleIntersection(entry) {
+        if (entry.isIntersecting) {
+            this._handleEnter(entry.target);
+            return;
+        }
+        this._handleExit(entry.target);
+    }
+
+    _handleEnter(el) {
+        this._activate(el);
+        this._stopObservingIfOnce(el);
+    }
+
+    _handleExit(el) {
+        if (!this.once) {
+            this._deactivate(el);
+        }
+    }
+
+    // ---------- Activate / deactivate ----------
 
     _activate(el) {
         const animation = this._getAnimation(el);
 
-        if (this.type === 'text' && animation === 'typewriter') {
+        if (this._isTypewriter(animation)) {
             this._runTypewriter(el);
             return;
         }
 
         if (this._requiresSegmentation(animation)) {
-            el.querySelectorAll('.at-segment').forEach((span) => span.classList.add(this.visibleClass));
+            this._showSegments(el);
             return;
         }
 
+        this._showElement(el);
+    }
+
+    _showSegments(el) {
+        el.querySelectorAll('.at-segment').forEach((span) => span.classList.add(this.visibleClass));
+    }
+
+    _showElement(el) {
         el.classList.add(this.visibleClass);
     }
 
     _deactivate(el) {
         const animation = this._getAnimation(el);
 
-        if (this.type === 'text' && animation === 'typewriter') {
-            el.textContent = '';
+        if (this._isTypewriter(animation)) {
+            this._clearTypewriterText(el);
             return;
         }
+
         if (this._requiresSegmentation(animation)) {
-            el.querySelectorAll('.at-segment').forEach((span) => span.classList.remove(this.visibleClass));
+            this._hideSegments(el);
             return;
         }
+
+        this._hideElement(el);
+    }
+
+    _clearTypewriterText(el) {
+        el.textContent = '';
+    }
+
+    _hideSegments(el) {
+        el.querySelectorAll('.at-segment').forEach((span) => span.classList.remove(this.visibleClass));
+    }
+
+    _hideElement(el) {
         el.classList.remove(this.visibleClass);
     }
+
+    // ---------- Typewriter ----------
 
     _runTypewriter(el) {
         const originalText = el.dataset.originalText || '';
         el.textContent = '';
-        let i = 0;
-
-        const writeNext = () => {
-            if (i >= originalText.length) return;
-            el.textContent += originalText[i];
-            i += 1;
-            const t = setTimeout(writeNext, this.typewriterSpeed);
-            this._timeouts.push(t);
-        };
-
-        writeNext();
+        this._typeCharacter(el, originalText, 0);
     }
+
+    _typeCharacter(el, text, index) {
+        if (index >= text.length) return;
+
+        el.textContent += text[index];
+        const timeoutId = setTimeout(() => this._typeCharacter(el, text, index + 1), this.typewriterSpeed);
+        this._timeouts.push(timeoutId);
+    }
+
+    // ---------- Lifecycle ----------
 
     refresh() {
         this.destroy();
@@ -183,18 +274,25 @@ class Animations {
     }
 
     destroy() {
-        if (this.observer) {
-            this.observer.disconnect();
-            this.observer = null;
-        }
+        this._disconnectObserver();
+        this._clearTimeouts();
+        this.elements = [];
+    }
+
+    _disconnectObserver() {
+        if (!this.observer) return;
+        this.observer.disconnect();
+        this.observer = null;
+    }
+
+    _clearTimeouts() {
         this._timeouts.forEach((t) => clearTimeout(t));
         this._timeouts = [];
-        this.elements = [];
     }
 }
 
-window.addEventListener('load', () => {
-    window.__animationsPhotos = new Animations({
+function initPhotoAnimations() {
+    return new Animations({
         selector: '.animated-photo',
         type: 'photo',
         animation: 'fade-up',
@@ -204,8 +302,10 @@ window.addEventListener('load', () => {
         once: true,
         onLoad: true,
     });
+}
 
-    window.__animationsTexts = new Animations({
+function initTextAnimations() {
+    return new Animations({
         selector: '.animated-text',
         type: 'text',
         animation: 'fade-up',
@@ -215,4 +315,9 @@ window.addEventListener('load', () => {
         once: true,
         onLoad: true,
     });
+}
+
+window.addEventListener('load', () => {
+    window.__animationsPhotos = initPhotoAnimations();
+    window.__animationsTexts = initTextAnimations();
 });
